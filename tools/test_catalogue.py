@@ -128,8 +128,14 @@ class Checks(unittest.TestCase):
         self.addon(types=["tide", "surf"])
         self.assertTrue(any('"surf"' in e for e in self.errors()))
 
-    def test_the_apps_own_types_are_not_taken(self):
-        self.addon(GOOD.replace("'tide'", "'calendar'"), types=["calendar"])
+    def test_words_in_a_label_are_not_calls(self):
+        self.addon(GOOD + "\nconst label = 'Link (ICS) or File (local)';\n")
+        self.assertEqual(self.errors(), [])
+        self.addon(GOOD + "\nfinal x = 'a${File('/etc/passwd').readAsStringSync()}';\n")
+        self.assertTrue(any('"files"' in e for e in self.errors()))
+
+    def test_the_names_kept_for_uploads_are_not_taken(self):
+        self.addon(GOOD.replace("'tide'", "'custom_tide'"), types=["custom_tide"])
         self.assertTrue(any("not a type an add-on can bring" in e for e in self.errors()))
 
     def test_stray_files_are_refused(self):

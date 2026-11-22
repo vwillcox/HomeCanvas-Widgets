@@ -4,9 +4,8 @@ The widgets for [HomeCanvas](https://github.com/vwillcox/HomeCanvas), the
 self-hosted wall display for a Raspberry Pi — each one an **add-on** you
 download to your panel from the editor's **Add-ons** page.
 
-HomeCanvas keeps two widgets for itself (the calendar and parcels, which the
-rest of the app leans on). Every other widget lives here: 50 that used to be
-built in, and whatever anyone sends next.
+HomeCanvas has no widgets of its own. Every one lives here: the 52 that used
+to be built in, and whatever anyone sends next.
 
 ## Getting one onto your panel
 
@@ -43,6 +42,16 @@ app-ref                the HomeCanvas branch the add-ons are built against
 See **[CONTRIBUTING.md](CONTRIBUTING.md)**. In short: copy a template into
 `widgets/<your_name_for_it>/`, make it yours, draw its picture with
 `tools/shots.sh`, and open a pull request.
+
+## Or keeping a library of your own
+
+You need not send a widget here for it to be used. A panel can read other
+libraries beside this catalogue — any public repository laid out as this
+one is. Nobody here tests or reads what is in them, and the Add-ons page
+says so on every add-on that comes from one; what is installed from a
+library is at the risk of whoever installs it.
+**[docs/your-own-library.md](docs/your-own-library.md)** says how to set one
+up.
 
 ## How a widget gets from a pull request to a panel
 

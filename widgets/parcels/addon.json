@@ -1,0 +1,17 @@
+{
+  "name": "Parcels",
+  "description": "Parcels on their way: share a tracking link or number to the panel from the phone app — a Royal Mail, DPD, Evri or Yodel email, a courier’s page — and it goes on this list. With a tracking service set below, each is looked up every half an hour and pops up when it is out for delivery or has come. Tap one for its story and its carrier’s page.",
+  "author": "Vincent Willcox",
+  "authorUrl": "https://github.com/vwillcox",
+  "category": "Around the house",
+  "glyph": "📦",
+  "version": "1.0.0",
+  "kind": "dart",
+  "entry": "parcels_widget.dart",
+  "types": [
+    "parcels"
+  ],
+  "permissions": [],
+  "minApp": "2.0.0",
+  "screenshot": "screenshot.png"
+}

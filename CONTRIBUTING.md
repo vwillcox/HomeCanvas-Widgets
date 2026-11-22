@@ -3,6 +3,9 @@
 Anyone can add a widget to the catalogue. It is a folder under `widgets/`
 and a pull request; the checks tell you what, if anything, to put right.
 
+Would you rather keep it in a repository of your own? You can: see
+[docs/your-own-library.md](docs/your-own-library.md).
+
 ## Two kinds
 
 **Described in JSON** — what it is called, its settings, the address its

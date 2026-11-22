@@ -54,9 +54,6 @@ CATEGORIES = [
     "Other",
 ]
 
-# The widgets the app keeps for itself: no add-on may take their names.
-CORE_TYPES = {"calendar", "parcels"}
-
 MAX_DART = 256 * 1024
 MAX_ADDON = 768 * 1024
 MAX_JSON = 64 * 1024
@@ -116,12 +113,14 @@ class Report:
         self.notes.append(f"{where}: {what}")
 
 
-def strip_comments(dart):
+def strip_comments(dart, strings=True):
     """Dart without its comments, so that prose is not read as code.
 
     Strings are kept, and read as Dart reads them — raw ones, triple-quoted
     ones, and code inside ${…} — so that nothing can be dressed up as a
-    comment by a quote the reader miscounted.
+    comment by a quote the reader miscounted. Without [strings], what a
+    string says is left out too — only the code inside its ${…} stays — for
+    asking what the code calls: a label reading "Link (ICS)" opens no link.
     """
     out = []
     n = len(dart)
@@ -136,7 +135,8 @@ def strip_comments(dart):
         while i < n:
             c = dart[i]
             if not raw and c == "\\" and i + 1 < n:
-                out.append(dart[i : i + 2])
+                if strings:
+                    out.append(dart[i : i + 2])
                 i += 2
             elif dart.startswith(quote, i):
                 out.append(quote)
@@ -149,7 +149,8 @@ def strip_comments(dart):
             elif c == "\n" and len(quote) == 1:
                 return  # unterminated: not Dart, and the analyser will say so
             else:
-                out.append(c)
+                if strings:
+                    out.append(c)
                 i += 1
 
     def code(inside):
@@ -356,8 +357,9 @@ def check_dart(id, m, own, rep):
             hit = pattern.search(code)
             if hit:
                 rep.error(where, what.format(*(hit.groups() or (hit.group(0),))) + ", which no add-on may")
+        calls = strip_comments(source, strings=False)
         for perm, (meaning, pattern) in PERMISSIONS.items():
-            if pattern.search(code):
+            if pattern.search(calls):
                 used.add(perm)
                 if perm not in declared:
                     rep.error(where, f'{meaning}: say so with "{perm}" in "permissions", or do without')
@@ -370,7 +372,7 @@ def check_dart(id, m, own, rep):
     if not re.search(r"^\s*(final|const|var|List<DashboardWidgetType>)\b[^;=]*\bwidgetTypes\s*=", everything, re.M):
         rep.error(id, f"{entry} must declare what it brings: final widgetTypes = <DashboardWidgetType>[…];")
     for t in m.get("types") or []:
-        if not TYPE.match(t) or t.startswith("custom_") or t in CORE_TYPES:
+        if not TYPE.match(t) or t.startswith("custom_") :
             rep.error(id, f'"{t}" is not a type an add-on can bring')
         elif not re.search(r"type:\s*['\"]" + re.escape(t) + r"['\"]", everything):
             rep.error(id, f'lists the type "{t}", which its Dart does not declare')

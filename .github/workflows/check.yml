@@ -101,11 +101,15 @@ jobs:
       - name: Have the analyser read them
         working-directory: app
         run: |
+          # A library need have no tests of its own.
+          tests=""; [ -d test/addons ] && tests="test/addons"
           flutter analyze --no-pub --no-fatal-infos --no-fatal-warnings \
-            lib/dashboard/widgets/custom test/addons
+            lib/dashboard/widgets/custom $tests
       - name: Run their tests
         working-directory: app
-        run: flutter test --no-pub test/addons test/editor_schema_test.dart
+        run: |
+          tests=""; [ -d test/addons ] && tests="test/addons"
+          flutter test --no-pub $tests test/editor_schema_test.dart
 
   publish:
     name: Publish the catalogue
