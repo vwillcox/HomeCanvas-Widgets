@@ -1,8 +1,8 @@
 {
  "schema": 1,
  "repo": "vwillcox/HomeCanvas-Widgets",
- "commit": "b39f7fee64020ec355fc5d41961acb98d6954ae6",
- "generated": "2026-11-22T11:25:12Z",
+ "commit": "368a635b2bb735664e70ee22596c597d5b91b737",
+ "generated": "2026-11-22T11:48:57Z",
  "addons": [
   {
    "id": "air_quality",
@@ -289,7 +289,7 @@
    "authorUrl": "https://github.com/vwillcox",
    "category": "Around the house",
    "glyph": "🖖",
-   "version": "1.0.0",
+   "version": "1.0.1",
    "kind": "dart",
    "entry": "ha_bridge_widget.dart",
    "types": [
@@ -301,8 +301,8 @@
    "files": [
     {
      "path": "ha_bridge_widget.dart",
-     "sha256": "7b1f596a884ce2c950e0efc70cd1c3deb8a6d8f5eaca7b335ac100f61ef08189",
-     "size": 14938
+     "sha256": "6b646a655c85f42352edc70df02981b719954866da9b5f19509a75249e77827c",
+     "size": 15598
     }
    ]
   },
@@ -1140,6 +1140,422 @@
      "path": "tfl_widgets.dart",
      "sha256": "4af164e9808d799930b9fdec42d11e46fecebe50fe0501f6f9ecf79af96ca46c",
      "size": 20128
+    }
+   ]
+  },
+  {
+   "id": "theme_abyss",
+   "name": "Abyss",
+   "description": "Deep water: blue light from above, cyan from below, and very clear glass tiles with big round corners.",
+   "author": "Vincent Willcox",
+   "authorUrl": "https://github.com/vwillcox",
+   "category": "Themes",
+   "glyph": "🌊",
+   "version": "1.0.0",
+   "kind": "theme",
+   "entry": "theme.json",
+   "types": [],
+   "themes": [
+    "abyss"
+   ],
+   "permissions": [],
+   "minApp": "2.0.0",
+   "screenshot": "screenshot.png",
+   "files": [
+    {
+     "path": "theme.json",
+     "sha256": "eb1331b27b6f7af1a05faa2d615aa584081e967adcd3932aa0aa092b4a684f90",
+     "size": 359
+    }
+   ]
+  },
+  {
+   "id": "theme_aurora",
+   "name": "Aurora",
+   "description": "Glass after dark: frosted tiles over an inky black lit from two corners at once — violet from the top left, teal from the bottom right — with light catching the top of each pane and a mint accent between the two glows.",
+   "author": "Vincent Willcox",
+   "authorUrl": "https://github.com/vwillcox",
+   "category": "Themes",
+   "glyph": "🌌",
+   "version": "1.0.0",
+   "kind": "theme",
+   "entry": "theme.json",
+   "types": [],
+   "themes": [
+    "aurora"
+   ],
+   "permissions": [],
+   "minApp": "2.0.0",
+   "screenshot": "screenshot.png",
+   "files": [
+    {
+     "path": "theme.json",
+     "sha256": "94afa3541f179ff0f152d3730cd2007043fed894e5c25444244e04f17ee5a239",
+     "size": 361
+    }
+   ]
+  },
+  {
+   "id": "theme_ember",
+   "name": "Ember",
+   "description": "Warm and dark: a smouldering brown-black gradient, tiles tinted with firelight and an orange accent.",
+   "author": "Vincent Willcox",
+   "authorUrl": "https://github.com/vwillcox",
+   "category": "Themes",
+   "glyph": "🔥",
+   "version": "1.0.0",
+   "kind": "theme",
+   "entry": "theme.json",
+   "types": [],
+   "themes": [
+    "ember"
+   ],
+   "permissions": [],
+   "minApp": "2.0.0",
+   "screenshot": "screenshot.png",
+   "files": [
+    {
+     "path": "theme.json",
+     "sha256": "a008fa257e36d36b9dbc632a1beb28642442099078380e4f40481ffcb78a076c",
+     "size": 308
+    }
+   ]
+  },
+  {
+   "id": "theme_espresso",
+   "name": "Espresso",
+   "description": "Warm and bookish: flat coffee-brown tiles with no edges or shadows, a serif face and a caramel accent.",
+   "author": "Vincent Willcox",
+   "authorUrl": "https://github.com/vwillcox",
+   "category": "Themes",
+   "glyph": "☕",
+   "version": "1.0.0",
+   "kind": "theme",
+   "entry": "theme.json",
+   "types": [],
+   "themes": [
+    "espresso"
+   ],
+   "permissions": [],
+   "minApp": "2.0.0",
+   "screenshot": "screenshot.png",
+   "files": [
+    {
+     "path": "theme.json",
+     "sha256": "906acda5595b924ef0b9c8795863a5bf0fa85a4625e24a6c333ac6ef0a1f9f4a",
+     "size": 302
+    }
+   ]
+  },
+  {
+   "id": "theme_forest",
+   "name": "Forest",
+   "description": "Woodland after dusk: a deep green-black gradient, tiles tinted with mint and a fresh green accent.",
+   "author": "Vincent Willcox",
+   "authorUrl": "https://github.com/vwillcox",
+   "category": "Themes",
+   "glyph": "🌲",
+   "version": "1.0.0",
+   "kind": "theme",
+   "entry": "theme.json",
+   "types": [],
+   "themes": [
+    "forest"
+   ],
+   "permissions": [],
+   "minApp": "2.0.0",
+   "screenshot": "screenshot.png",
+   "files": [
+    {
+     "path": "theme.json",
+     "sha256": "daedc3055a13a4172839ee97afe7342f3e9eb29d1808fe2abc953337f9b6dcc8",
+     "size": 310
+    }
+   ]
+  },
+  {
+   "id": "theme_frost",
+   "name": "Frost",
+   "description": "Glass in daylight: frosted white panes on pale ice blue, a white bloom from the top left, and light along each pane's top edge.",
+   "author": "Vincent Willcox",
+   "authorUrl": "https://github.com/vwillcox",
+   "category": "Themes",
+   "glyph": "❄️",
+   "version": "1.0.0",
+   "kind": "theme",
+   "entry": "theme.json",
+   "types": [],
+   "themes": [
+    "frost"
+   ],
+   "permissions": [],
+   "minApp": "2.0.0",
+   "screenshot": "screenshot.png",
+   "files": [
+    {
+     "path": "theme.json",
+     "sha256": "4636f8f3489b464c59f19d16cdcdb5498bfc111765dbe1b4b6825453992fca35",
+     "size": 359
+    }
+   ]
+  },
+  {
+   "id": "theme_lcars",
+   "name": "LCARS",
+   "description": "A starship's console: black, with flat bars of orange, lilac and blue swept round the corner of every panel, block buttons and tall condensed capitals. The whole kiosk dresses as one — Settings, the albums, the player — not only the dashboard.",
+   "author": "Vincent Willcox",
+   "authorUrl": "https://github.com/vwillcox",
+   "category": "Themes",
+   "glyph": "🖖",
+   "version": "1.0.0",
+   "kind": "theme",
+   "entry": "theme.json",
+   "types": [],
+   "themes": [
+    "lcars"
+   ],
+   "permissions": [],
+   "minApp": "2.0.0",
+   "screenshot": "screenshot.png",
+   "files": [
+    {
+     "path": "theme.json",
+     "sha256": "377337df9713c0b5a5074c8d37cce35f58ef68100e945d2312510366319a7506",
+     "size": 456
+    }
+   ]
+  },
+  {
+   "id": "theme_midnight",
+   "name": "Midnight",
+   "description": "A calm night blue: a navy gradient, soft translucent tiles and a sky-blue accent. The dashboard's first look.",
+   "author": "Vincent Willcox",
+   "authorUrl": "https://github.com/vwillcox",
+   "category": "Themes",
+   "glyph": "🌙",
+   "version": "1.0.0",
+   "kind": "theme",
+   "entry": "theme.json",
+   "types": [],
+   "themes": [
+    "midnight"
+   ],
+   "permissions": [],
+   "minApp": "2.0.0",
+   "screenshot": "screenshot.png",
+   "files": [
+    {
+     "path": "theme.json",
+     "sha256": "d1197560e14738bc4f9c9d269447df32f09b525db49a9b09de71adeadc97b848",
+     "size": 314
+    }
+   ]
+  },
+  {
+   "id": "theme_nightstand",
+   "name": "Nightstand",
+   "description": "Deliberately plain and very high contrast: no panels, white on true black with an amber accent. Readable across a room, and the safest choice for an always-on panel, since so little of it is lit.",
+   "author": "Vincent Willcox",
+   "authorUrl": "https://github.com/vwillcox",
+   "category": "Themes",
+   "glyph": "🛏️",
+   "version": "1.0.0",
+   "kind": "theme",
+   "entry": "theme.json",
+   "types": [],
+   "themes": [
+    "nightstand"
+   ],
+   "permissions": [],
+   "minApp": "2.0.0",
+   "screenshot": "screenshot.png",
+   "files": [
+    {
+     "path": "theme.json",
+     "sha256": "4d8cfab093a63b64c5f5c02e75a5c5194fc50d90f8b049b91d99e7cfe78a4032",
+     "size": 303
+    }
+   ]
+  },
+  {
+   "id": "theme_obsidian",
+   "name": "Obsidian",
+   "description": "Black lacquer: solid tiles rather than glass, with a strong gloss along the top and a champagne-gold accent. Glossy rather than glassy.",
+   "author": "Vincent Willcox",
+   "authorUrl": "https://github.com/vwillcox",
+   "category": "Themes",
+   "glyph": "🖤",
+   "version": "1.0.0",
+   "kind": "theme",
+   "entry": "theme.json",
+   "types": [],
+   "themes": [
+    "obsidian"
+   ],
+   "permissions": [],
+   "minApp": "2.0.0",
+   "screenshot": "screenshot.png",
+   "files": [
+    {
+     "path": "theme.json",
+     "sha256": "f69ea984788f05f525d8a2300e10c823389a2b61d01611cdaebaadd8e2aec158",
+     "size": 330
+    }
+   ]
+  },
+  {
+   "id": "theme_paper",
+   "name": "Paper",
+   "description": "Light and quiet: white cards on warm off-white paper, dark ink and a burnt-orange accent. No glass, no shadows.",
+   "author": "Vincent Willcox",
+   "authorUrl": "https://github.com/vwillcox",
+   "category": "Themes",
+   "glyph": "📄",
+   "version": "1.0.0",
+   "kind": "theme",
+   "entry": "theme.json",
+   "types": [],
+   "themes": [
+    "paper"
+   ],
+   "permissions": [],
+   "minApp": "2.0.0",
+   "screenshot": "screenshot.png",
+   "files": [
+    {
+     "path": "theme.json",
+     "sha256": "8c120ad055581eb86f836bc4826193b1f55cdd3f3d3c1d04245b612e8f128bca",
+     "size": 309
+    }
+   ]
+  },
+  {
+   "id": "theme_sorbet",
+   "name": "Sorbet",
+   "description": "Sweets in a shop window: glossy near-white panes over a peach-to-pink wash, a coral accent and a rounded face.",
+   "author": "Vincent Willcox",
+   "authorUrl": "https://github.com/vwillcox",
+   "category": "Themes",
+   "glyph": "🍧",
+   "version": "1.0.0",
+   "kind": "theme",
+   "entry": "theme.json",
+   "types": [],
+   "themes": [
+    "sorbet"
+   ],
+   "permissions": [],
+   "minApp": "2.0.0",
+   "screenshot": "screenshot.png",
+   "files": [
+    {
+     "path": "theme.json",
+     "sha256": "c1b6dbc94e452e636d240f584c908dddb5e5cd7e5c87609dbaf4e4bbbea044ec",
+     "size": 331
+    }
+   ]
+  },
+  {
+   "id": "theme_swiss",
+   "name": "Swiss",
+   "description": "International Typographic Style: flat white blocks on grey, square corners, wide gutters, black type and one signal red. No gloss, no glass, no shadow.",
+   "author": "Vincent Willcox",
+   "authorUrl": "https://github.com/vwillcox",
+   "category": "Themes",
+   "glyph": "🇨🇭",
+   "version": "1.0.0",
+   "kind": "theme",
+   "entry": "theme.json",
+   "types": [],
+   "themes": [
+    "swiss"
+   ],
+   "permissions": [],
+   "minApp": "2.0.0",
+   "screenshot": "screenshot.png",
+   "files": [
+    {
+     "path": "theme.json",
+     "sha256": "b95f613e4e4d48d3749056e38f7f24840f16a316ac26a57ebd3c52494ac68314",
+     "size": 296
+    }
+   ]
+  },
+  {
+   "id": "theme_synthwave",
+   "name": "Synthwave",
+   "description": "Eighties neon: magenta and cyan light on deep purple, tiles edged in pink and glossed, in a techno face that stays readable.",
+   "author": "Vincent Willcox",
+   "authorUrl": "https://github.com/vwillcox",
+   "category": "Themes",
+   "glyph": "🌆",
+   "version": "1.0.0",
+   "kind": "theme",
+   "entry": "theme.json",
+   "types": [],
+   "themes": [
+    "synthwave"
+   ],
+   "permissions": [],
+   "minApp": "2.0.0",
+   "screenshot": "screenshot.png",
+   "files": [
+    {
+     "path": "theme.json",
+     "sha256": "2e0a6496434aa64e2742ddbfd46397f395170e782744e07341c9d060bba17c21",
+     "size": 376
+    }
+   ]
+  },
+  {
+   "id": "theme_terminal",
+   "name": "Terminal",
+   "description": "A green-screen terminal: phosphor on black, hairline boxes, a monospaced face and the faintest glow, as off an old tube.",
+   "author": "Vincent Willcox",
+   "authorUrl": "https://github.com/vwillcox",
+   "category": "Themes",
+   "glyph": "📟",
+   "version": "1.0.0",
+   "kind": "theme",
+   "entry": "theme.json",
+   "types": [],
+   "themes": [
+    "terminal"
+   ],
+   "permissions": [],
+   "minApp": "2.0.0",
+   "screenshot": "screenshot.png",
+   "files": [
+    {
+     "path": "theme.json",
+     "sha256": "6c9a220ec9215987c48c5c25a00535e9d062e45f694406bf2a7f841025310367",
+     "size": 333
+    }
+   ]
+  },
+  {
+   "id": "theme_terminal_night",
+   "name": "Terminal Night",
+   "description": "Terminal with the lights off: true black, no glow, boxes you only just see, and a softer green that is easy on the eyes in a dark room.",
+   "author": "Vincent Willcox",
+   "authorUrl": "https://github.com/vwillcox",
+   "category": "Themes",
+   "glyph": "🌑",
+   "version": "1.0.0",
+   "kind": "theme",
+   "entry": "theme.json",
+   "types": [],
+   "themes": [
+    "terminal-night"
+   ],
+   "permissions": [],
+   "minApp": "2.0.0",
+   "screenshot": "screenshot.png",
+   "files": [
+    {
+     "path": "theme.json",
+     "sha256": "45a6283ef1ba885578155eb4ef0853b22ae7061e1d956d8713208c69c348a794",
+     "size": 322
     }
    ]
   },
