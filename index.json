@@ -1,8 +1,8 @@
 {
  "schema": 1,
  "repo": "vwillcox/HomeCanvas-Widgets",
- "commit": "e8683451313b305f87608968368b06d6541d2659",
- "generated": "2026-11-22T09:51:47Z",
+ "commit": "7e2cd60b3c5c04a96e92a0f12452a893dac4c56e",
+ "generated": "2026-11-22T09:57:58Z",
  "addons": [
   {
    "id": "air_quality",
@@ -19,7 +19,7 @@
     "air_quality"
    ],
    "permissions": [],
-   "minApp": "1.1.0",
+   "minApp": "2.0.0",
    "screenshot": "screenshot.png",
    "files": [
     {
@@ -44,7 +44,7 @@
     "bins"
    ],
    "permissions": [],
-   "minApp": "1.1.0",
+   "minApp": "2.0.0",
    "screenshot": "screenshot.png",
    "files": [
     {
@@ -69,7 +69,7 @@
     "birthdays"
    ],
    "permissions": [],
-   "minApp": "1.1.0",
+   "minApp": "2.0.0",
    "screenshot": "screenshot.png",
    "files": [
     {
@@ -94,7 +94,7 @@
     "grid_carbon"
    ],
    "permissions": [],
-   "minApp": "1.1.0",
+   "minApp": "2.0.0",
    "screenshot": "screenshot.png",
    "files": [
     {
@@ -119,7 +119,7 @@
     "certs"
    ],
    "permissions": [],
-   "minApp": "1.1.0",
+   "minApp": "2.0.0",
    "screenshot": "screenshot.png",
    "files": [
     {
@@ -144,7 +144,7 @@
     "chores"
    ],
    "permissions": [],
-   "minApp": "1.1.0",
+   "minApp": "2.0.0",
    "screenshot": "screenshot.png",
    "files": [
     {
@@ -169,7 +169,7 @@
     "clock"
    ],
    "permissions": [],
-   "minApp": "1.1.0",
+   "minApp": "2.0.0",
    "screenshot": "screenshot.png",
    "starter": true,
    "files": [
@@ -195,7 +195,7 @@
     "countdowns"
    ],
    "permissions": [],
-   "minApp": "1.1.0",
+   "minApp": "2.0.0",
    "screenshot": "screenshot.png",
    "files": [
     {
@@ -220,7 +220,7 @@
     "fuel"
    ],
    "permissions": [],
-   "minApp": "1.1.0",
+   "minApp": "2.0.0",
    "screenshot": "screenshot.png",
    "files": [
     {
@@ -245,7 +245,7 @@
     "github"
    ],
    "permissions": [],
-   "minApp": "1.1.0",
+   "minApp": "2.0.0",
    "screenshot": "screenshot.png",
    "files": [
     {
@@ -270,7 +270,7 @@
     "ha_bridge"
    ],
    "permissions": [],
-   "minApp": "1.1.0",
+   "minApp": "2.0.0",
    "screenshot": "screenshot.png",
    "files": [
     {
@@ -295,7 +295,7 @@
     "ha_energy"
    ],
    "permissions": [],
-   "minApp": "1.1.0",
+   "minApp": "2.0.0",
    "screenshot": "screenshot.png",
    "files": [
     {
@@ -320,7 +320,7 @@
     "history"
    ],
    "permissions": [],
-   "minApp": "1.1.0",
+   "minApp": "2.0.0",
    "screenshot": "screenshot.png",
    "files": [
     {
@@ -345,7 +345,7 @@
     "home_assistant"
    ],
    "permissions": [],
-   "minApp": "1.1.0",
+   "minApp": "2.0.0",
    "screenshot": "screenshot.png",
    "files": [
     {
@@ -385,7 +385,7 @@
     "homey_system"
    ],
    "permissions": [],
-   "minApp": "1.1.0",
+   "minApp": "2.0.0",
    "screenshot": "screenshot.png",
    "files": [
     {
@@ -410,7 +410,7 @@
     "immich"
    ],
    "permissions": [],
-   "minApp": "1.1.0",
+   "minApp": "2.0.0",
    "screenshot": "screenshot.png",
    "files": [
     {
@@ -435,7 +435,7 @@
     "immich_library"
    ],
    "permissions": [],
-   "minApp": "1.1.0",
+   "minApp": "2.0.0",
    "screenshot": "screenshot.png",
    "files": [
     {
@@ -460,7 +460,7 @@
     "lan_speedtest"
    ],
    "permissions": [],
-   "minApp": "1.1.0",
+   "minApp": "2.0.0",
    "screenshot": "screenshot.png",
    "files": [
     {
@@ -485,7 +485,7 @@
     "lights"
    ],
    "permissions": [],
-   "minApp": "1.1.0",
+   "minApp": "2.0.0",
    "screenshot": "screenshot.png",
    "files": [
     {
@@ -511,7 +511,7 @@
     "crypto"
    ],
    "permissions": [],
-   "minApp": "1.1.0",
+   "minApp": "2.0.0",
    "screenshot": "screenshot.png",
    "files": [
     {
@@ -536,7 +536,7 @@
     "meals"
    ],
    "permissions": [],
-   "minApp": "1.1.0",
+   "minApp": "2.0.0",
    "screenshot": "screenshot.png",
    "files": [
     {
@@ -561,7 +561,7 @@
     "memories"
    ],
    "permissions": [],
-   "minApp": "1.1.0",
+   "minApp": "2.0.0",
    "screenshot": "screenshot.png",
    "files": [
     {
@@ -586,7 +586,7 @@
     "news"
    ],
    "permissions": [],
-   "minApp": "1.1.0",
+   "minApp": "2.0.0",
    "screenshot": "screenshot.png",
    "starter": true,
    "files": [
@@ -612,7 +612,7 @@
     "notes"
    ],
    "permissions": [],
-   "minApp": "1.1.0",
+   "minApp": "2.0.0",
    "screenshot": "screenshot.png",
    "starter": true,
    "files": [
@@ -638,7 +638,7 @@
     "omarchy"
    ],
    "permissions": [],
-   "minApp": "1.1.0",
+   "minApp": "2.0.0",
    "screenshot": "screenshot.png",
    "files": [
     {
@@ -668,7 +668,7 @@
     "planes"
    ],
    "permissions": [],
-   "minApp": "1.1.0",
+   "minApp": "2.0.0",
    "screenshot": "screenshot.png",
    "files": [
     {
@@ -693,7 +693,7 @@
     "radio"
    ],
    "permissions": [],
-   "minApp": "1.1.0",
+   "minApp": "2.0.0",
    "screenshot": "screenshot.png",
    "files": [
     {
@@ -718,7 +718,7 @@
     "railcam"
    ],
    "permissions": [],
-   "minApp": "1.1.0",
+   "minApp": "2.0.0",
    "screenshot": "screenshot.png",
    "files": [
     {
@@ -743,7 +743,7 @@
     "rain"
    ],
    "permissions": [],
-   "minApp": "1.1.0",
+   "minApp": "2.0.0",
    "screenshot": "screenshot.png",
    "files": [
     {
@@ -768,7 +768,7 @@
     "reminders"
    ],
    "permissions": [],
-   "minApp": "1.1.0",
+   "minApp": "2.0.0",
    "screenshot": "screenshot.png",
    "files": [
     {
@@ -792,7 +792,7 @@
     "custom_sea_state"
    ],
    "permissions": [],
-   "minApp": "1.1.0",
+   "minApp": "2.0.0",
    "screenshot": "screenshot.png",
    "files": [
     {
@@ -817,7 +817,7 @@
     "servers"
    ],
    "permissions": [],
-   "minApp": "1.1.0",
+   "minApp": "2.0.0",
    "screenshot": "screenshot.png",
    "files": [
     {
@@ -842,7 +842,7 @@
     "services"
    ],
    "permissions": [],
-   "minApp": "1.1.0",
+   "minApp": "2.0.0",
    "screenshot": "screenshot.png",
    "files": [
     {
@@ -867,7 +867,7 @@
     "sevenFm"
    ],
    "permissions": [],
-   "minApp": "1.1.0",
+   "minApp": "2.0.0",
    "screenshot": "screenshot.png",
    "files": [
     {
@@ -892,7 +892,7 @@
     "shopping"
    ],
    "permissions": [],
-   "minApp": "1.1.0",
+   "minApp": "2.0.0",
    "screenshot": "screenshot.png",
    "files": [
     {
@@ -918,7 +918,7 @@
     "nebula"
    ],
    "permissions": [],
-   "minApp": "1.1.0",
+   "minApp": "2.0.0",
    "screenshot": "screenshot.png",
    "files": [
     {
@@ -944,7 +944,7 @@
     "bluesky"
    ],
    "permissions": [],
-   "minApp": "1.1.0",
+   "minApp": "2.0.0",
    "screenshot": "screenshot.png",
    "files": [
     {
@@ -969,7 +969,7 @@
     "speedtest"
    ],
    "permissions": [],
-   "minApp": "1.1.0",
+   "minApp": "2.0.0",
    "screenshot": "screenshot.png",
    "files": [
     {
@@ -994,7 +994,7 @@
     "spotify"
    ],
    "permissions": [],
-   "minApp": "1.1.0",
+   "minApp": "2.0.0",
    "screenshot": "screenshot.png",
    "files": [
     {
@@ -1019,7 +1019,7 @@
     "sun_moon"
    ],
    "permissions": [],
-   "minApp": "1.1.0",
+   "minApp": "2.0.0",
    "screenshot": "screenshot.png",
    "starter": true,
    "files": [
@@ -1046,7 +1046,7 @@
     "tfl_arrivals"
    ],
    "permissions": [],
-   "minApp": "1.1.0",
+   "minApp": "2.0.0",
    "screenshot": "screenshot.png",
    "files": [
     {
@@ -1071,7 +1071,7 @@
     "tides"
    ],
    "permissions": [],
-   "minApp": "1.1.0",
+   "minApp": "2.0.0",
    "screenshot": "screenshot.png",
    "files": [
     {
@@ -1096,7 +1096,7 @@
     "timers"
    ],
    "permissions": [],
-   "minApp": "1.1.0",
+   "minApp": "2.0.0",
    "screenshot": "screenshot.png",
    "starter": true,
    "files": [
@@ -1122,7 +1122,7 @@
     "traffic_cams"
    ],
    "permissions": [],
-   "minApp": "1.1.0",
+   "minApp": "2.0.0",
    "screenshot": "screenshot.png",
    "files": [
     {
@@ -1147,7 +1147,7 @@
     "trains"
    ],
    "permissions": [],
-   "minApp": "1.1.0",
+   "minApp": "2.0.0",
    "screenshot": "screenshot.png",
    "files": [
     {
@@ -1172,7 +1172,7 @@
     "transit"
    ],
    "permissions": [],
-   "minApp": "1.1.0",
+   "minApp": "2.0.0",
    "screenshot": "screenshot.png",
    "files": [
     {
@@ -1197,7 +1197,7 @@
     "tv"
    ],
    "permissions": [],
-   "minApp": "1.1.0",
+   "minApp": "2.0.0",
    "screenshot": "screenshot.png",
    "files": [
     {
@@ -1227,7 +1227,7 @@
     "unifi_isp"
    ],
    "permissions": [],
-   "minApp": "1.1.0",
+   "minApp": "2.0.0",
    "screenshot": "screenshot.png",
    "files": [
     {
@@ -1252,7 +1252,7 @@
     "updates"
    ],
    "permissions": [],
-   "minApp": "1.1.0",
+   "minApp": "2.0.0",
    "screenshot": "screenshot.png",
    "files": [
     {
@@ -1277,7 +1277,7 @@
     "weather"
    ],
    "permissions": [],
-   "minApp": "1.1.0",
+   "minApp": "2.0.0",
    "screenshot": "screenshot.png",
    "starter": true,
    "files": [
@@ -1303,7 +1303,7 @@
     "youtube"
    ],
    "permissions": [],
-   "minApp": "1.1.0",
+   "minApp": "2.0.0",
    "screenshot": "screenshot.png",
    "files": [
     {
