@@ -5,7 +5,8 @@ self-hosted wall display for a Raspberry Pi — each one an **add-on** you
 download to your panel from the editor's **Add-ons** page.
 
 HomeCanvas has no widgets of its own. Every one lives here: the 52 that used
-to be built in, and whatever anyone sends next.
+to be built in, the photo albums that used to be the kiosk's first screen,
+and whatever anyone sends next.
 
 ## Getting one onto your panel
 

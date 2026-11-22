@@ -1,0 +1,18 @@
+{
+  "name": "Photo albums",
+  "description": "The albums on your Immich server: tap one for its photos, a slideshow or a video; search the whole library by who, where or when; pick several albums for one slideshow. Opens the whole album browser too, and the top bar's Photos button comes here.",
+  "author": "Vincent Willcox",
+  "authorUrl": "https://github.com/vwillcox",
+  "category": "Photos, music & TV",
+  "glyph": "🖼️",
+  "version": "1.0.0",
+  "kind": "dart",
+  "entry": "immich_albums_widget.dart",
+  "types": [
+    "immich_albums"
+  ],
+  "permissions": [],
+  "minApp": "2.0.0",
+  "screenshot": "screenshot.png",
+  "starter": true
+}

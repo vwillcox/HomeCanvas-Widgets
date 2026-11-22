@@ -513,7 +513,6 @@ void main() {
 
     setUp(() {
       config = ConfigService();
-      config.config.dashboard.enabled = true;
       mastodon = _FakeMastodon();
       bluesky = _FakeBluesky();
       cards = [];
@@ -598,16 +597,6 @@ void main() {
       await notifier.check();
       expect(cards.single.from, 'Bluesky');
       expect(cards.single.title, 'Alice followed you');
-    });
-
-    test('nothing while the dashboard is switched off', () async {
-      config.config.dashboard
-        ..enabled = false
-        ..widgets = [tile('mastodon', 'all')];
-      await notifier.check();
-      mastodon.waiting = [_notice('1', SocialNoticeKind.mention)];
-      await notifier.check();
-      expect(mastodon.since, isEmpty);
     });
 
     test('a long run of them is counted after the first few', () {
