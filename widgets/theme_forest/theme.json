@@ -1,0 +1,17 @@
+{
+  "id": "forest",
+  "name": "Forest",
+  "background": [
+    "#0c1512",
+    "#14241e"
+  ],
+  "surface": "#14a7f3d0",
+  "border": "#26a7f3d0",
+  "textPrimary": "#ffeaf6f0",
+  "textSecondary": "#99eaf6f0",
+  "accent": "#ff6ee7b7",
+  "cornerRadius": 20.0,
+  "gap": 14.0,
+  "fontFamily": null,
+  "shadow": true
+}

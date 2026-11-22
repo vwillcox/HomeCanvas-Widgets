@@ -6,7 +6,7 @@ and a pull request; the checks tell you what, if anything, to put right.
 Would you rather keep it in a repository of your own? You can: see
 [docs/your-own-library.md](docs/your-own-library.md).
 
-## Two kinds
+## Three kinds
 
 **Described in JSON** — what it is called, its settings, the address its
 data comes from and how to show it: a figure, some cards, or a list. Nothing
@@ -20,6 +20,17 @@ had: its own drawing, taps, timers. The panel builds it into itself. Start
 from [`templates/dart/`](templates/dart). The widgets already here are the
 best examples; how a widget is put together is described in the app, in
 [`lib/dashboard/widgets/README.md`](https://github.com/vwillcox/HomeCanvas/blob/main/lib/dashboard/widgets/README.md).
+
+**A theme** — colours and measures for the whole kiosk, no code at all: one
+`theme.json`, the same file the app reads from its themes folder, with
+`"kind": "theme"`, `"category": "Themes"`, `"types": []` and `"themes"`
+naming the theme's `id`. Any of the `theme_*` folders is an example to copy;
+[THEMES.md](https://github.com/vwillcox/HomeCanvas/blob/main/THEMES.md) in
+the app says what each setting does. The checks hold it to colours that are
+colours, measures within reason, a font the app carries, and text that can
+be read on its tiles (`tests/themes_test.dart`). It cannot take the name of
+the app's own theme, Glass, or of another theme here. Its picture is the
+panel dressed in it — with nothing of anybody's own on screen.
 
 ## The folder
 

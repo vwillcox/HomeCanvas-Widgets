@@ -11,6 +11,7 @@ import 'package:home_canvas/services/radio_service.dart';
 import 'package:home_canvas/services/radio_stations.dart';
 
 import '../tile_shapes.dart';
+import '../theme_fixtures.dart';
 
 /// Every Radio look, idle and playing, in every theme, from a page to
 /// itself down to a strip — without overflowing or throwing.
@@ -106,7 +107,7 @@ void main() {
         );
       }
       for (final look in ['auto', 'compact', 'studio', 'dial', 'grid']) {
-        for (final theme in kBuiltInThemes) {
+        for (final theme in testThemes) {
           for (final (cw, ch) in sizes) {
             await draw(tester, radio, tile(cw, ch), look: look, theme: theme);
             final e = tester.takeException();

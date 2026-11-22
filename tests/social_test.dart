@@ -17,6 +17,7 @@ import 'package:home_canvas/services/social.dart';
 import 'package:home_canvas/services/social_notifier.dart';
 
 import '../tile_shapes.dart';
+import '../theme_fixtures.dart';
 
 /// Answers each request from [answer], and remembers what was asked.
 class _Adapter implements HttpClientAdapter {
@@ -695,7 +696,7 @@ void main() {
       BlueskyApi.debugFeed = (a, feed) async => feed == BlueskyFeed.following
           ? SocialFeed(who: '@me.bsky.social', posts: posts)
           : SocialFeed(who: '@me.bsky.social', notices: notices);
-      final lcars = kBuiltInThemes.firstWhere((t) => t.isLcars);
+      final lcars = testThemes.firstWhere((t) => t.isLcars);
       for (final (type, options) in [
         ('mastodon', {'server': 'mastodon.social', 'token': 't'}),
         (

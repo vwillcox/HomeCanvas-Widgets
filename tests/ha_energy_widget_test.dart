@@ -3,13 +3,14 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:provider/provider.dart';
 
 import 'package:home_canvas/dashboard/dashboard_model.dart';
-import 'package:home_canvas/dashboard/dashboard_theme.dart';
 import 'package:home_canvas/dashboard/widget_registry.dart';
 import 'package:home_canvas/dashboard/widgets/custom/addons/ha_energy/ha_energy_widget.dart';
 import 'package:home_canvas/dashboard/widgets/widgets.dart';
 import 'package:home_canvas/services/config_service.dart';
 import 'package:home_canvas/services/glowmarkt_service.dart';
 import 'package:home_canvas/services/home_assistant_service.dart';
+
+import '../theme_fixtures.dart';
 
 DateTime at(int day, int hour, [int minute = 0]) =>
     DateTime(2026, 10, day, hour, minute);
@@ -163,7 +164,7 @@ void main() {
       tester.view.devicePixelRatio = 1;
       addTearDown(tester.view.reset);
       final w = DashboardWidgetContext(
-        theme: kBuiltInThemes.firstWhere((t) => t.id == theme),
+        theme: testThemes.firstWhere((t) => t.id == theme),
         config: DashboardWidgetConfig(
           id: 'e',
           type: 'ha_energy',

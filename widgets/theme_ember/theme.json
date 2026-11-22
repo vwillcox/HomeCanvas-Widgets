@@ -1,0 +1,17 @@
+{
+  "id": "ember",
+  "name": "Ember",
+  "background": [
+    "#1a0f0b",
+    "#2e1710"
+  ],
+  "surface": "#1affb08a",
+  "border": "#33ffb08a",
+  "textPrimary": "#fffff1e8",
+  "textSecondary": "#99fff1e8",
+  "accent": "#ffff8a4c",
+  "cornerRadius": 24.0,
+  "gap": 14.0,
+  "fontFamily": null,
+  "shadow": true
+}

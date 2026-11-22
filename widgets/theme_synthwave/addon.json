@@ -1,0 +1,18 @@
+{
+  "name": "Synthwave",
+  "description": "Eighties neon: magenta and cyan light on deep purple, tiles edged in pink and glossed, in a techno face that stays readable.",
+  "author": "Vincent Willcox",
+  "authorUrl": "https://github.com/vwillcox",
+  "category": "Themes",
+  "glyph": "🌆",
+  "version": "1.0.0",
+  "kind": "theme",
+  "entry": "theme.json",
+  "types": [],
+  "themes": [
+    "synthwave"
+  ],
+  "permissions": [],
+  "minApp": "2.0.0",
+  "screenshot": "screenshot.png"
+}

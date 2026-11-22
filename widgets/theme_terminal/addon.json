@@ -1,0 +1,18 @@
+{
+  "name": "Terminal",
+  "description": "A green-screen terminal: phosphor on black, hairline boxes, a monospaced face and the faintest glow, as off an old tube.",
+  "author": "Vincent Willcox",
+  "authorUrl": "https://github.com/vwillcox",
+  "category": "Themes",
+  "glyph": "📟",
+  "version": "1.0.0",
+  "kind": "theme",
+  "entry": "theme.json",
+  "types": [],
+  "themes": [
+    "terminal"
+  ],
+  "permissions": [],
+  "minApp": "2.0.0",
+  "screenshot": "screenshot.png"
+}

@@ -11,6 +11,7 @@ import 'package:home_canvas/services/markets_service.dart';
 import 'package:home_canvas/widgets/lcars.dart';
 
 import '../tile_shapes.dart';
+import '../theme_fixtures.dart';
 
 void main() {
   group('Yahoo chart', () {
@@ -609,7 +610,7 @@ void main() {
     testWidgets('on a console the time is lettered on the panel\'s bar', (
       tester,
     ) async {
-      final lcars = kBuiltInThemes.firstWhere((t) => t.isLcars);
+      final lcars = testThemes.firstWhere((t) => t.isLcars);
       final markets = MarketsService();
       addTearDown(markets.dispose);
       final now = DateTime.now();
@@ -653,9 +654,9 @@ void main() {
                       child: gone
                           ? const SizedBox()
                           : Builder(
-                              builder: (context) => WidgetRegistry.find(
-                                'stocks',
-                              )!.build(context, w),
+                              builder: (context) =>
+                                  WidgetRegistry.find('stocks')!
+                                      .build(context, w),
                             ),
                     ),
                   ),
@@ -663,18 +664,19 @@ void main() {
               ),
             ),
           );
-      String? onBar() => LcarsBarNote.maybeOf(
-        tester.element(find.byType(LcarsBarNote)),
-      )?.value?.words;
+      String? onBar() =>
+          LcarsBarNote.maybeOf(tester.element(find.byType(LcarsBarNote)))
+              ?.value
+              ?.words;
 
       await tester.pumpWidget(panel(framed: true));
       await tester.pump(const Duration(seconds: 1));
       expect(onBar(), 'Updated 09:14');
       // The time alone, for a bar too short for the words.
       expect(
-        LcarsBarNote.maybeOf(
-          tester.element(find.byType(LcarsBarNote)),
-        )?.value?.brief,
+        LcarsBarNote.maybeOf(tester.element(find.byType(LcarsBarNote)))
+            ?.value
+            ?.brief,
         '09:14',
       );
       expect(find.textContaining('UPDATED'), findsNothing);

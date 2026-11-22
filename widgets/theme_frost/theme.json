@@ -1,0 +1,19 @@
+{
+  "id": "frost",
+  "name": "Frost",
+  "background": [
+    "#d5e1f2"
+  ],
+  "surface": "#8cffffff",
+  "border": "#ccffffff",
+  "textPrimary": "#ff1b2433",
+  "textSecondary": "#991b2433",
+  "accent": "#ff2f6feb",
+  "cornerRadius": 26.0,
+  "gap": 12.0,
+  "fontFamily": null,
+  "shadow": true,
+  "glow": "#99ffffff",
+  "glowEnd": "#5589b4ff",
+  "sheen": 0.35
+}

@@ -1,0 +1,19 @@
+{
+  "id": "aurora",
+  "name": "Aurora",
+  "background": [
+    "#07080e"
+  ],
+  "surface": "#14dde3ff",
+  "border": "#22e6eaff",
+  "textPrimary": "#fff6f7ff",
+  "textSecondary": "#9ef6f7ff",
+  "accent": "#ff8ff0dc",
+  "cornerRadius": 26.0,
+  "gap": 10.0,
+  "fontFamily": null,
+  "shadow": true,
+  "glow": "#338e7bff",
+  "glowEnd": "#3833d6c0",
+  "sheen": 0.07
+}

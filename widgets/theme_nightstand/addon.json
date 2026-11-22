@@ -1,0 +1,18 @@
+{
+  "name": "Nightstand",
+  "description": "Deliberately plain and very high contrast: no panels, white on true black with an amber accent. Readable across a room, and the safest choice for an always-on panel, since so little of it is lit.",
+  "author": "Vincent Willcox",
+  "authorUrl": "https://github.com/vwillcox",
+  "category": "Themes",
+  "glyph": "🛏️",
+  "version": "1.0.0",
+  "kind": "theme",
+  "entry": "theme.json",
+  "types": [],
+  "themes": [
+    "nightstand"
+  ],
+  "permissions": [],
+  "minApp": "2.0.0",
+  "screenshot": "screenshot.png"
+}

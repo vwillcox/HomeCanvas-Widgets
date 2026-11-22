@@ -1,0 +1,18 @@
+{
+  "name": "Sorbet",
+  "description": "Sweets in a shop window: glossy near-white panes over a peach-to-pink wash, a coral accent and a rounded face.",
+  "author": "Vincent Willcox",
+  "authorUrl": "https://github.com/vwillcox",
+  "category": "Themes",
+  "glyph": "🍧",
+  "version": "1.0.0",
+  "kind": "theme",
+  "entry": "theme.json",
+  "types": [],
+  "themes": [
+    "sorbet"
+  ],
+  "permissions": [],
+  "minApp": "2.0.0",
+  "screenshot": "screenshot.png"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "paper",
+  "name": "Paper",
+  "background": [
+    "#f6f4ef",
+    "#eae6dd"
+  ],
+  "surface": "#ffffffff",
+  "border": "#14000000",
+  "textPrimary": "#ff1e1b16",
+  "textSecondary": "#991e1b16",
+  "accent": "#ffb4531f",
+  "cornerRadius": 16.0,
+  "gap": 14.0,
+  "fontFamily": null,
+  "shadow": false
+}

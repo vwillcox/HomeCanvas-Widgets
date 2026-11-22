@@ -1,0 +1,19 @@
+{
+  "id": "synthwave",
+  "name": "Synthwave",
+  "background": [
+    "#12002a"
+  ],
+  "surface": "#b3190733",
+  "border": "#66ff6ad5",
+  "textPrimary": "#fffdf0ff",
+  "textSecondary": "#b3f3d9ff",
+  "accent": "#ffff6ad5",
+  "cornerRadius": 14.0,
+  "gap": 14.0,
+  "fontFamily": "ChakraPetch",
+  "shadow": true,
+  "glow": "#40ff2e97",
+  "glowEnd": "#3300e5ff",
+  "sheen": 0.08
+}

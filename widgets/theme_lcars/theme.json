@@ -1,0 +1,26 @@
+{
+  "id": "lcars",
+  "name": "LCARS",
+  "background": [
+    "#000000"
+  ],
+  "surface": "#ff15131c",
+  "border": "#999999ff",
+  "textPrimary": "#ffffcc99",
+  "textSecondary": "#ffaaaaff",
+  "accent": "#ffff9900",
+  "cornerRadius": 22.0,
+  "gap": 4.0,
+  "fontFamily": "Antonio",
+  "shadow": false,
+  "style": "lcars",
+  "palette": [
+    "#ffff9900",
+    "#ffcc99cc",
+    "#ff9999ff",
+    "#ffffcc99",
+    "#ffcc6666",
+    "#ff99ccff",
+    "#ffffcc66"
+  ]
+}

@@ -12,6 +12,8 @@ import 'package:home_canvas/l10n/dates.dart';
 import 'package:home_canvas/services/parcels_service.dart';
 import 'package:home_canvas/services/side_browser.dart';
 
+import '../theme_fixtures.dart';
+
 void main() {
   group('the tile', () {
     setUpAll(registerBuiltInWidgets);
@@ -94,7 +96,7 @@ void main() {
 
     final themes = [
       for (final id in ['glass', 'lcars', 'paper'])
-        kBuiltInThemes.firstWhere((t) => t.id == id),
+        testThemes.firstWhere((t) => t.id == id),
     ];
 
     testWidgets('fits, from a small tile to a big one, in every look', (

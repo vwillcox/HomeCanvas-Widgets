@@ -1,0 +1,18 @@
+{
+  "name": "Terminal Night",
+  "description": "Terminal with the lights off: true black, no glow, boxes you only just see, and a softer green that is easy on the eyes in a dark room.",
+  "author": "Vincent Willcox",
+  "authorUrl": "https://github.com/vwillcox",
+  "category": "Themes",
+  "glyph": "🌑",
+  "version": "1.0.0",
+  "kind": "theme",
+  "entry": "theme.json",
+  "types": [],
+  "themes": [
+    "terminal-night"
+  ],
+  "permissions": [],
+  "minApp": "2.0.0",
+  "screenshot": "screenshot.png"
+}

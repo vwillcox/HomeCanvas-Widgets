@@ -1,0 +1,17 @@
+{
+  "id": "terminal",
+  "name": "Terminal",
+  "background": [
+    "#030805"
+  ],
+  "surface": "#0a39ff88",
+  "border": "#4d39ff88",
+  "textPrimary": "#ffc8ffd9",
+  "textSecondary": "#99c8ffd9",
+  "accent": "#ff39ff88",
+  "cornerRadius": 2.0,
+  "gap": 12.0,
+  "fontFamily": "ShareTechMono",
+  "shadow": false,
+  "glow": "#1439ff88"
+}

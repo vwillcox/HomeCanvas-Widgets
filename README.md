@@ -8,6 +8,11 @@ HomeCanvas has no widgets of its own. Every one lives here: the 52 that used
 to be built in, the photo albums that used to be the kiosk's first screen,
 and whatever anyone sends next.
 
+The **themes** are here too: all but Glass, the app's own look — LCARS,
+Aurora, Paper, Terminal and the rest, sixteen of them, in `widgets/theme_*`.
+A theme is colours and measures, no code; it is on a panel the moment it is
+downloaded.
+
 ## Getting one onto your panel
 
 Open the dashboard editor in a browser (`http://<your panel>:8090`), choose
@@ -46,9 +51,9 @@ See **[CONTRIBUTING.md](CONTRIBUTING.md)**. In short: copy a template into
 
 ## Or keeping a library of your own
 
-You need not send a widget here for it to be used. A panel can read other
-libraries beside this catalogue — any public repository laid out as this
-one is. Nobody here tests or reads what is in them, and the Add-ons page
+You need not send a widget here for it to be used. A panel can read
+**third-party libraries** beside this catalogue — any public repository
+laid out as this one is. Nobody here tests or reads what is in them, and the Add-ons page
 says so on every add-on that comes from one; what is installed from a
 library is at the risk of whoever installs it.
 **[docs/your-own-library.md](docs/your-own-library.md)** says how to set one

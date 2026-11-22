@@ -1,0 +1,18 @@
+{
+  "name": "Midnight",
+  "description": "A calm night blue: a navy gradient, soft translucent tiles and a sky-blue accent. The dashboard's first look.",
+  "author": "Vincent Willcox",
+  "authorUrl": "https://github.com/vwillcox",
+  "category": "Themes",
+  "glyph": "🌙",
+  "version": "1.0.0",
+  "kind": "theme",
+  "entry": "theme.json",
+  "types": [],
+  "themes": [
+    "midnight"
+  ],
+  "permissions": [],
+  "minApp": "2.0.0",
+  "screenshot": "screenshot.png"
+}

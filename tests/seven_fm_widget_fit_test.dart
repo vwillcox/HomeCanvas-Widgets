@@ -4,7 +4,6 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:provider/provider.dart';
 
 import 'package:home_canvas/dashboard/dashboard_model.dart';
-import 'package:home_canvas/dashboard/dashboard_theme.dart';
 import 'package:home_canvas/dashboard/widget_registry.dart';
 import 'package:home_canvas/dashboard/widgets/widgets.dart';
 import 'package:home_canvas/services/audio_levels_service.dart';
@@ -12,6 +11,7 @@ import 'package:home_canvas/services/radio_service.dart';
 import 'package:home_canvas/services/seven_fm.dart';
 
 import '../tile_shapes.dart';
+import '../theme_fixtures.dart';
 
 /// A station that cannot be reached.
 class _Gone extends Interceptor {
@@ -81,7 +81,7 @@ void main() {
       );
       if (answered) radio.debugPlaying(sevenStation('sst').radio);
 
-      for (final theme in kBuiltInThemes) {
+      for (final theme in testThemes) {
         for (final (cw, ch) in sizes) {
           final w = DashboardWidgetContext(
             theme: theme,

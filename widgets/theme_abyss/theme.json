@@ -1,0 +1,19 @@
+{
+  "id": "abyss",
+  "name": "Abyss",
+  "background": [
+    "#020a14"
+  ],
+  "surface": "#12bfe7ff",
+  "border": "#24bfe7ff",
+  "textPrimary": "#ffeaf8ff",
+  "textSecondary": "#99eaf8ff",
+  "accent": "#ff5ce1ff",
+  "cornerRadius": 28.0,
+  "gap": 12.0,
+  "fontFamily": null,
+  "shadow": true,
+  "glow": "#2e1e90ff",
+  "glowEnd": "#2600e5ff",
+  "sheen": 0.05
+}

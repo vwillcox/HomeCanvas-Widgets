@@ -9,6 +9,8 @@ import 'package:home_canvas/dashboard/widgets/widgets.dart';
 import 'package:home_canvas/services/config_service.dart';
 import 'package:home_canvas/services/home_assistant_service.dart';
 
+import '../theme_fixtures.dart';
+
 HaEntity light(String id, String name, String state) =>
     HaEntity(id: id, state: state, attributes: {'friendly_name': name});
 
@@ -68,7 +70,7 @@ void main() {
     tester.view.devicePixelRatio = 1;
     addTearDown(tester.view.reset);
     final w = DashboardWidgetContext(
-      theme: kBuiltInThemes.firstWhere(
+      theme: testThemes.firstWhere(
         (t) => t.id == theme,
         orElse: () => kBuiltInThemes.first,
       ),

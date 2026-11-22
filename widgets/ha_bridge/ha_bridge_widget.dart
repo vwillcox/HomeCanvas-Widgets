@@ -169,11 +169,9 @@ class _HaBridgeWidgetState extends State<HaBridgeWidget>
       );
     }
     final chosen = math.min(_chosen, groups.length - 1);
-    // A console whatever the dashboard is dressed in: its own black, and
-    // the LCARS theme for the blocks to take their colours from.
-    final console = t.isLcars
-        ? t
-        : kBuiltInThemes.firstWhere((x) => x.isLcars, orElse: () => t);
+    // A console whatever the dashboard is dressed in: the theme's own when
+    // it is one, and otherwise the Bridge's.
+    final console = t.isLcars ? t : bridgeConsole;
     final page = KioskLook(
       theme: console,
       child: DefaultTextStyle.merge(
@@ -409,6 +407,34 @@ class _Blocks extends StatelessWidget {
     );
   }
 }
+
+/// The Bridge's own console colours, for a dashboard dressed in a theme that
+/// is not one: the LCARS theme's, so the two look alike, whether or not that
+/// theme is on the panel.
+const bridgeConsole = DashboardTheme(
+  id: 'ha_bridge_console',
+  name: 'Bridge',
+  style: ThemeStyle.lcars,
+  background: [Color(0xFF000000)],
+  surface: Color(0xFF15131C),
+  border: Color(0x999999FF),
+  textPrimary: Color(0xFFFFCC99),
+  textSecondary: Color(0xFFAAAAFF),
+  accent: Color(0xFFFF9900),
+  palette: [
+    Color(0xFFFF9900),
+    Color(0xFFCC99CC),
+    Color(0xFF9999FF),
+    Color(0xFFFFCC99),
+    Color(0xFFCC6666),
+    Color(0xFF99CCFF),
+    Color(0xFFFFCC66),
+  ],
+  cornerRadius: 22,
+  gap: 4,
+  fontFamily: 'Antonio',
+  shadow: false,
+);
 
 final haBridgeWidgetType = DashboardWidgetType(
   type: 'ha_bridge',

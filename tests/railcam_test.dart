@@ -79,9 +79,8 @@ class _Site implements HttpClientAdapter {
         reason: 'Connection refused',
       );
     }
-    final had = RegExp(
-      r'PHPSESSID=(\w+)',
-    ).firstMatch('${options.headers['Cookie'] ?? ''}')?[1];
+    final had = RegExp(r'PHPSESSID=(\w+)')
+        .firstMatch('${options.headers['Cookie'] ?? ''}')?[1];
     final session = had ?? 's${++_sessions}';
     // The later a session was handed out, the later its answer arrives —
     // after the sign-in, for the last of several asked for at once.
@@ -184,9 +183,8 @@ void main() {
     expect(off.hls, isNull);
 
     expect(
-      RailcamService.parsePlayer(
-        'No Access : from URL <title>x</title>',
-      ).noAccess,
+      RailcamService.parsePlayer('No Access : from URL <title>x</title>')
+          .noAccess,
       isTrue,
     );
   });

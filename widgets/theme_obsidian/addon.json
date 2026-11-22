@@ -1,0 +1,18 @@
+{
+  "name": "Obsidian",
+  "description": "Black lacquer: solid tiles rather than glass, with a strong gloss along the top and a champagne-gold accent. Glossy rather than glassy.",
+  "author": "Vincent Willcox",
+  "authorUrl": "https://github.com/vwillcox",
+  "category": "Themes",
+  "glyph": "🖤",
+  "version": "1.0.0",
+  "kind": "theme",
+  "entry": "theme.json",
+  "types": [],
+  "themes": [
+    "obsidian"
+  ],
+  "permissions": [],
+  "minApp": "2.0.0",
+  "screenshot": "screenshot.png"
+}

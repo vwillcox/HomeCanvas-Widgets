@@ -1,0 +1,18 @@
+{
+  "id": "obsidian",
+  "name": "Obsidian",
+  "background": [
+    "#050506",
+    "#111216"
+  ],
+  "surface": "#f0191a1f",
+  "border": "#2effffff",
+  "textPrimary": "#fff4f1ea",
+  "textSecondary": "#99f4f1ea",
+  "accent": "#ffe9c46a",
+  "cornerRadius": 22.0,
+  "gap": 14.0,
+  "fontFamily": null,
+  "shadow": true,
+  "sheen": 0.1
+}

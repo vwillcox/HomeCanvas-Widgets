@@ -1,0 +1,18 @@
+{
+  "name": "Swiss",
+  "description": "International Typographic Style: flat white blocks on grey, square corners, wide gutters, black type and one signal red. No gloss, no glass, no shadow.",
+  "author": "Vincent Willcox",
+  "authorUrl": "https://github.com/vwillcox",
+  "category": "Themes",
+  "glyph": "🇨🇭",
+  "version": "1.0.0",
+  "kind": "theme",
+  "entry": "theme.json",
+  "types": [],
+  "themes": [
+    "swiss"
+  ],
+  "permissions": [],
+  "minApp": "2.0.0",
+  "screenshot": "screenshot.png"
+}

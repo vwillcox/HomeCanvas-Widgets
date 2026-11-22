@@ -1,0 +1,18 @@
+{
+  "name": "Frost",
+  "description": "Glass in daylight: frosted white panes on pale ice blue, a white bloom from the top left, and light along each pane's top edge.",
+  "author": "Vincent Willcox",
+  "authorUrl": "https://github.com/vwillcox",
+  "category": "Themes",
+  "glyph": "❄️",
+  "version": "1.0.0",
+  "kind": "theme",
+  "entry": "theme.json",
+  "types": [],
+  "themes": [
+    "frost"
+  ],
+  "permissions": [],
+  "minApp": "2.0.0",
+  "screenshot": "screenshot.png"
+}

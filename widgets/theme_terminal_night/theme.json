@@ -1,0 +1,16 @@
+{
+  "id": "terminal-night",
+  "name": "Terminal Night",
+  "background": [
+    "#000000"
+  ],
+  "surface": "#0529d66f",
+  "border": "#2629d66f",
+  "textPrimary": "#ff7fd69a",
+  "textSecondary": "#8c7fd69a",
+  "accent": "#ff29c765",
+  "cornerRadius": 2.0,
+  "gap": 12.0,
+  "fontFamily": "ShareTechMono",
+  "shadow": false
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Aurora",
+  "description": "Glass after dark: frosted tiles over an inky black lit from two corners at once — violet from the top left, teal from the bottom right — with light catching the top of each pane and a mint accent between the two glows.",
+  "author": "Vincent Willcox",
+  "authorUrl": "https://github.com/vwillcox",
+  "category": "Themes",
+  "glyph": "🌌",
+  "version": "1.0.0",
+  "kind": "theme",
+  "entry": "theme.json",
+  "types": [],
+  "themes": [
+    "aurora"
+  ],
+  "permissions": [],
+  "minApp": "2.0.0",
+  "screenshot": "screenshot.png"
+}

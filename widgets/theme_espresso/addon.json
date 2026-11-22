@@ -1,0 +1,18 @@
+{
+  "name": "Espresso",
+  "description": "Warm and bookish: flat coffee-brown tiles with no edges or shadows, a serif face and a caramel accent.",
+  "author": "Vincent Willcox",
+  "authorUrl": "https://github.com/vwillcox",
+  "category": "Themes",
+  "glyph": "☕",
+  "version": "1.0.0",
+  "kind": "theme",
+  "entry": "theme.json",
+  "types": [],
+  "themes": [
+    "espresso"
+  ],
+  "permissions": [],
+  "minApp": "2.0.0",
+  "screenshot": "screenshot.png"
+}

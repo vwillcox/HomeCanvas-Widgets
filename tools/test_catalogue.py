@@ -76,9 +76,12 @@ class Checks(unittest.TestCase):
         m = catalogue.read_manifest("tide", rep)
         catalogue.check_manifest("tide", m, rep)
         own = catalogue.check_files("tide", m, rep)
-        (catalogue.check_dart if m["kind"] == "dart" else catalogue.check_json)(
-            "tide", m, own, rep
-        )
+        check = {
+            "dart": catalogue.check_dart,
+            "json": catalogue.check_json,
+            "theme": catalogue.check_theme,
+        }[m["kind"]]
+        check("tide", m, own, rep)
         return rep.errors
 
     def test_a_plain_widget_passes(self):
@@ -173,6 +176,59 @@ class Checks(unittest.TestCase):
         self.assertTrue(any("carries a secret" in e for e in self.errors()))
         self.described("https://api.example.org/t", headers={"Authorization": "Bearer {{option.key}}"})
         self.assertEqual(self.errors(), [])
+
+    def theme(self, **theme):
+        t = {
+            "id": "tide-pool",
+            "name": "Tide pool",
+            "background": ["#04121a"],
+            "surface": "#14ffffff",
+            "border": "#22ffffff",
+            "textPrimary": "#ffffffff",
+            "textSecondary": "#99ffffff",
+            "accent": "#ff7dd3fc",
+            "cornerRadius": 20,
+            "gap": 12,
+            "fontFamily": "Inter",
+            **theme,
+        }
+        folder = self.addon(
+            kind="theme", category="Themes", entry="theme.json", types=[],
+            themes=[t["id"]],
+        )
+        with open(os.path.join(folder, "theme.json"), "w") as f:
+            json.dump(t, f)
+
+    def test_a_theme_passes(self):
+        self.theme()
+        self.assertEqual(self.errors(), [])
+
+    def test_a_theme_is_colours_and_measures(self):
+        for bad, said in (
+            ({"accent": "orange"}, '"accent" must be a colour'),
+            ({"gap": 400}, '"gap" must be a number'),
+            ({"fontFamily": "Papyrus"}, "not a face the app has"),
+            ({"style": "comic"}, '"style" must be one of'),
+            ({"style": "lcars"}, 'needs a "palette"'),
+            ({"script": "alert(1)"}, '"script" is not something a theme has'),
+            ({"id": "glass"}, "the app's own theme"),
+        ):
+            self.theme(**bad)
+            self.assertTrue(any(said in e for e in self.errors()), (bad, self.errors()))
+
+    def test_a_theme_brings_no_widgets(self):
+        self.theme()
+        path = os.path.join(self.dir, "tide", "addon.json")
+        with open(path) as f:
+            m = json.load(f)
+        m["types"] = ["tide"]
+        with open(path, "w") as f:
+            json.dump(m, f)
+        self.assertTrue(any("brings no widget types" in e for e in self.errors()))
+
+    def test_only_a_theme_is_filed_under_themes(self):
+        self.addon(category="Themes")
+        self.assertTrue(any('"Themes"' in e for e in self.errors()))
 
 
 if __name__ == "__main__":

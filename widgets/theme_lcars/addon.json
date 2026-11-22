@@ -1,0 +1,18 @@
+{
+  "name": "LCARS",
+  "description": "A starship's console: black, with flat bars of orange, lilac and blue swept round the corner of every panel, block buttons and tall condensed capitals. The whole kiosk dresses as one — Settings, the albums, the player — not only the dashboard.",
+  "author": "Vincent Willcox",
+  "authorUrl": "https://github.com/vwillcox",
+  "category": "Themes",
+  "glyph": "🖖",
+  "version": "1.0.0",
+  "kind": "theme",
+  "entry": "theme.json",
+  "types": [],
+  "themes": [
+    "lcars"
+  ],
+  "permissions": [],
+  "minApp": "2.0.0",
+  "screenshot": "screenshot.png"
+}

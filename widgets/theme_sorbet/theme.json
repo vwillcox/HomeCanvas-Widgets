@@ -1,0 +1,18 @@
+{
+  "id": "sorbet",
+  "name": "Sorbet",
+  "background": [
+    "#ffe3d6",
+    "#ffcfe6"
+  ],
+  "surface": "#b3ffffff",
+  "border": "#e6ffffff",
+  "textPrimary": "#ff3d1e2e",
+  "textSecondary": "#993d1e2e",
+  "accent": "#ffe0245e",
+  "cornerRadius": 30.0,
+  "gap": 14.0,
+  "fontFamily": "Nunito",
+  "shadow": true,
+  "sheen": 0.45
+}

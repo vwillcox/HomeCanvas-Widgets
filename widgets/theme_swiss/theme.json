@@ -1,0 +1,16 @@
+{
+  "id": "swiss",
+  "name": "Swiss",
+  "background": [
+    "#ededea"
+  ],
+  "surface": "#ffffffff",
+  "border": "#00000000",
+  "textPrimary": "#ff111111",
+  "textSecondary": "#8c111111",
+  "accent": "#ffe30613",
+  "cornerRadius": 0.0,
+  "gap": 16.0,
+  "fontFamily": "Inter",
+  "shadow": false
+}

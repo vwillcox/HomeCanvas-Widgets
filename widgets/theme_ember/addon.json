@@ -1,0 +1,18 @@
+{
+  "name": "Ember",
+  "description": "Warm and dark: a smouldering brown-black gradient, tiles tinted with firelight and an orange accent.",
+  "author": "Vincent Willcox",
+  "authorUrl": "https://github.com/vwillcox",
+  "category": "Themes",
+  "glyph": "🔥",
+  "version": "1.0.0",
+  "kind": "theme",
+  "entry": "theme.json",
+  "types": [],
+  "themes": [
+    "ember"
+  ],
+  "permissions": [],
+  "minApp": "2.0.0",
+  "screenshot": "screenshot.png"
+}

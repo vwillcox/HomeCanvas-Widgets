@@ -1,7 +1,7 @@
 # Keeping a library of your own
 
 You do not have to send a widget here for people to use it. A HomeCanvas
-panel can read any number of **libraries** beside this catalogue: a
+panel can read any number of **third-party libraries** beside this catalogue: a
 repository of your own, laid out as this one is, that publishes its index
 the same way. Yours to run, yours to answer for.
 
@@ -78,7 +78,7 @@ they come with you when you copy it.
 
 ## Adding it to a panel
 
-In the editor, open **Add-ons**, then **Other people's libraries** at the
+In the editor, open **Add-ons**, then **Third-party libraries** at the
 foot of the page. Type `you/repository`, tick the box, **Add library**.
 Your add-ons appear in the list with the catalogue's, marked
 **Untested — from you/repository**.

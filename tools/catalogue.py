@@ -4,8 +4,8 @@
     catalogue.py check [--base REF] [--app DIR] [--owner]
     catalogue.py index --commit SHA --out FILE
 
-`check` reads every add-on under widgets/ and says what is wrong with any of
-them: a manifest that is incomplete, a file that should not be there, Dart
+`check` reads every add-on under widgets/ — widgets in Dart or JSON, and
+themes — and says what is wrong with any of them: a manifest that is incomplete, a file that should not be there, Dart
 that reaches for something it has not declared. It runs nothing an add-on
 contains. With --base it also holds a change to what a contributor may
 change, and to a new version number for anything it changes. With --app (a
@@ -39,6 +39,31 @@ TYPE = re.compile(r"^[a-z][A-Za-z0-9_]{1,39}$")
 DART = re.compile(r"^[a-z][a-z0-9_]*\.dart$")
 JSON_FILE = re.compile(r"^[a-z][a-z0-9_]*\.json$")
 VERSION = re.compile(r"^\d+\.\d+\.\d+$")
+# A theme's own name, as a panel's config.json keeps it: hyphens allowed.
+THEME_ID = re.compile(r"^[a-z][a-z0-9-]{1,39}$")
+COLOUR = re.compile(r"^#([0-9a-fA-F]{6}|[0-9a-fA-F]{8})$")
+
+# What an add-on can be: a widget written in Dart, one described in JSON,
+# or a theme — colours and measures, no code at all.
+KINDS = ("dart", "json", "theme")
+
+# The theme the app ships, and so one no add-on may replace.
+BUILT_IN_THEMES = {"glass"}
+# How a theme's frames are drawn: the app draws these, a theme picks one.
+STYLES = {"panels", "lcars"}
+THEME_KEYS = {
+    "id", "name", "background", "surface", "border", "textPrimary",
+    "textSecondary", "accent", "cornerRadius", "gap", "fontFamily", "shadow",
+    "glow", "glowEnd", "sheen", "style", "palette",
+}
+# The faces the app carries, for a theme to name; with --app, read from its
+# pubspec.yaml instead.
+FONTS = {
+    "Inter", "SourceSans3", "Lora", "JetBrainsMono", "Oswald", "Antonio",
+    "Quicksand", "Comfortaa", "Nunito", "Fredoka", "ComicNeue", "PatrickHand",
+    "Orbitron", "ChakraPetch", "ShareTechMono", "SpaceMono", "VT323",
+    "PressStart2P", "BebasNeue", "Bangers",
+}
 
 CATEGORIES = [
     "Time & day",
@@ -52,6 +77,7 @@ CATEGORIES = [
     "Homey",
     "Home lab",
     "Other",
+    "Themes",
 ]
 
 MAX_DART = 256 * 1024
@@ -244,20 +270,34 @@ def check_manifest(id, m, rep):
     url = m.get("authorUrl")
     if url is not None and not (isinstance(url, str) and url.startswith("https://")):
         rep.error(id, '"authorUrl" must be an https:// address')
+    theme = m.get("kind") == "theme"
     if m.get("category") not in CATEGORIES:
         rep.error(id, '"category" must be one of: ' + ", ".join(CATEGORIES))
+    elif theme != (m.get("category") == "Themes"):
+        rep.error(id, 'a theme\'s "category" is "Themes", and only a theme\'s is')
     glyph = m.get("glyph")
     if not isinstance(glyph, str) or not (1 <= len(glyph) <= 8):
         rep.error(id, '"glyph" is needed: one emoji')
     for key in ("version", "minApp"):
         if not (isinstance(m.get(key), str) and VERSION.match(m[key])):
             rep.error(id, f'"{key}" must be three numbers: 1.0.0')
-    if m.get("kind") not in ("dart", "json"):
-        rep.error(id, '"kind" must be "dart" or "json"')
+    if m.get("kind") not in KINDS:
+        rep.error(id, '"kind" must be "dart", "json" or "theme"')
     types = m.get("types")
-    if not (isinstance(types, list) and types and all(isinstance(t, str) for t in types)):
-        rep.error(id, '"types" must list the widget types it brings')
+    if theme:
+        if types != []:
+            rep.error(id, 'a theme brings no widget types: "types" is []')
         types = []
+        themes = m.get("themes")
+        if not (isinstance(themes, list) and len(themes) == 1
+                and isinstance(themes[0], str) and THEME_ID.match(themes[0])):
+            rep.error(id, '"themes" must name the one theme it brings, as its theme.json does')
+    else:
+        if "themes" in m:
+            rep.error(id, 'only a theme has "themes"')
+        if not (isinstance(types, list) and types and all(isinstance(t, str) for t in types)):
+            rep.error(id, '"types" must list the widget types it brings')
+            types = []
     perms = m.get("permissions", [])
     if not (isinstance(perms, list) and all(p in PERMISSIONS for p in perms)):
         rep.error(id, '"permissions" may only name: ' + ", ".join(PERMISSIONS))
@@ -266,7 +306,7 @@ def check_manifest(id, m, rep):
     known = {
         "name", "description", "author", "authorUrl", "category", "glyph",
         "version", "kind", "entry", "types", "permissions", "minApp",
-        "screenshot", "starter",
+        "screenshot", "starter", "themes",
     }
     for key in m:
         if key not in known:
@@ -309,7 +349,7 @@ def check_files(id, m, rep):
         if m.get("kind") == "dart" and DART.match(name):
             if size > MAX_DART:
                 rep.error(id, f"{name} is over 256 KB")
-        elif m.get("kind") == "json" and JSON_FILE.match(name):
+        elif m.get("kind") in ("json", "theme") and JSON_FILE.match(name):
             if size > MAX_JSON:
                 rep.error(id, f"{name} is over 64 KB")
         else:
@@ -416,6 +456,86 @@ def check_json(id, m, own, rep):
             rep.error(id, f'the header "{name}" carries a secret; take it from a setting: {{{{option.key}}}}')
 
 
+def check_theme(id, m, own, rep, fonts=FONTS):
+    """A theme: one theme.json of colours and measures, which the app reads
+    as it reads a theme dropped in its themes folder."""
+    if own != ["theme.json"] or m.get("entry") != "theme.json":
+        rep.error(id, 'a theme is one file, theme.json, named as its "entry"')
+        return
+    if m.get("permissions"):
+        rep.error(id, "a theme has no permissions to ask for")
+    with open(os.path.join(WIDGETS, id, "theme.json"), encoding="utf-8") as f:
+        try:
+            t = json.load(f)
+        except ValueError as e:
+            rep.error(id, f"theme.json is not valid JSON: {e}")
+            return
+    if not isinstance(t, dict):
+        rep.error(id, "theme.json must be an object")
+        return
+    for key in t:
+        if key not in THEME_KEYS:
+            rep.error(id, f'theme.json: "{key}" is not something a theme has')
+    tid = t.get("id")
+    if not (isinstance(tid, str) and THEME_ID.match(tid)):
+        rep.error(id, 'theme.json: "id" must be lower-case letters, digits and hyphens')
+    elif tid in BUILT_IN_THEMES:
+        rep.error(id, f'theme.json: "{tid}" is the app\'s own theme, and cannot be replaced')
+    elif m.get("themes") != [tid]:
+        rep.error(id, f'"themes" must be ["{tid}"], as its theme.json says')
+    name = t.get("name")
+    if not (isinstance(name, str) and 2 <= len(name.strip()) <= 40):
+        rep.error(id, 'theme.json: "name" is needed, of 2 to 40 characters')
+
+    def colour(key, needed=True):
+        v = t.get(key)
+        if v is None and not needed:
+            return
+        if not (isinstance(v, str) and COLOUR.match(v)):
+            rep.error(id, f'theme.json: "{key}" must be a colour, #rrggbb or #aarrggbb')
+
+    for key in ("surface", "border", "textPrimary", "textSecondary", "accent"):
+        colour(key)
+    colour("glow", needed=False)
+    colour("glowEnd", needed=False)
+    bg = t.get("background")
+    bg = bg if isinstance(bg, list) else [bg]
+    if not (1 <= len(bg) <= 2 and all(isinstance(c, str) and COLOUR.match(c) for c in bg)):
+        rep.error(id, 'theme.json: "background" is one colour, or two for a gradient')
+
+    def number(key, least, most):
+        v = t.get(key)
+        if v is None:
+            return
+        if isinstance(v, bool) or not isinstance(v, (int, float)) or not least <= v <= most:
+            rep.error(id, f'theme.json: "{key}" must be a number from {least} to {most}')
+
+    number("cornerRadius", 0, 60)
+    number("gap", 0, 48)
+    number("sheen", 0, 0.5)
+    if "shadow" in t and not isinstance(t["shadow"], bool):
+        rep.error(id, 'theme.json: "shadow" is true or false')
+    style = t.get("style", "panels")
+    if style not in STYLES:
+        rep.error(id, 'theme.json: "style" must be one of: ' + ", ".join(sorted(STYLES)))
+    palette = t.get("palette", [])
+    if not (isinstance(palette, list) and len(palette) <= 12
+            and all(isinstance(c, str) and COLOUR.match(c) for c in palette)):
+        rep.error(id, 'theme.json: "palette" is a list of up to twelve colours')
+    elif style == "lcars" and not palette:
+        rep.error(id, 'theme.json: a console ("style": "lcars") needs a "palette" for its blocks')
+    font = t.get("fontFamily")
+    if font is not None and font not in fonts:
+        rep.error(id, f'theme.json: "fontFamily" {font!r} is not a face the app has: '
+                  + ", ".join(sorted(fonts)))
+
+
+def app_fonts(app):
+    """The faces the app at [app] carries, as its pubspec.yaml lists them."""
+    with open(os.path.join(app, "pubspec.yaml"), encoding="utf-8") as f:
+        return set(re.findall(r"^\s*-\s*family:\s*(\S+)\s*$", f.read(), re.M)) or FONTS
+
+
 def addons():
     return sorted(
         d for d in os.listdir(WIDGETS) if os.path.isdir(os.path.join(WIDGETS, d))
@@ -488,7 +608,8 @@ def app_version(app):
 
 def check(args):
     rep = Report()
-    manifests, types = {}, {}
+    manifests, types, themes = {}, {}, {}
+    fonts = app_fonts(args.app) if args.app else FONTS
     for id in addons():
         m = read_manifest(id, rep)
         if m is None:
@@ -500,6 +621,12 @@ def check(args):
             check_dart(id, m, own, rep)
         elif m.get("kind") == "json":
             check_json(id, m, own, rep)
+        elif m.get("kind") == "theme":
+            check_theme(id, m, own, rep, fonts)
+            for t in m.get("themes") or []:
+                if isinstance(t, str) and t in themes:
+                    rep.error(id, f'brings the theme "{t}", which {themes[t]} already does')
+                themes[t] = id
         for t in declared:
             if t in types:
                 rep.error(id, f'brings "{t}", which {types[t]} already does')

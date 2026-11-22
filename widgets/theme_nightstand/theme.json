@@ -1,0 +1,16 @@
+{
+  "id": "nightstand",
+  "name": "Nightstand",
+  "background": [
+    "#000000"
+  ],
+  "surface": "#00000000",
+  "border": "#00000000",
+  "textPrimary": "#ffffffff",
+  "textSecondary": "#8affffff",
+  "accent": "#ffffb300",
+  "cornerRadius": 0.0,
+  "gap": 24.0,
+  "fontFamily": null,
+  "shadow": false
+}

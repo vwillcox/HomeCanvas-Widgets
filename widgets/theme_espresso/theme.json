@@ -1,0 +1,16 @@
+{
+  "id": "espresso",
+  "name": "Espresso",
+  "background": [
+    "#1c1410"
+  ],
+  "surface": "#ff2a1f19",
+  "border": "#00000000",
+  "textPrimary": "#fff3e6d8",
+  "textSecondary": "#99f3e6d8",
+  "accent": "#ffd9a066",
+  "cornerRadius": 10.0,
+  "gap": 12.0,
+  "fontFamily": "Lora",
+  "shadow": false
+}
