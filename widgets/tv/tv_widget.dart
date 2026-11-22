@@ -534,21 +534,31 @@ class _PairingState extends State<_Pairing> {
   }
 
   Future<void> _submit() async {
+    final code = _pin.text.trim();
+    // Nothing typed yet is not a wrong PIN; the hint already says what to do.
+    if (int.tryParse(code) == null) return;
     setState(() {
       _sending = true;
       _error = null;
     });
-    final ok = await widget.tv.submitPin(_pin.text.trim());
-    if (!mounted) return;
-    setState(() {
-      _sending = false;
-      if (!ok) {
-        _error = tr(
-          'widget.tv.theTelevisionDidNotAccept',
-          'The television did not accept that PIN.',
-        );
+    var ok = false;
+    try {
+      ok = await widget.tv.submitPin(code);
+    } finally {
+      // Whatever happens the button comes back — a throw here once left it
+      // greyed out until the panel restarted.
+      if (mounted) {
+        setState(() {
+          _sending = false;
+          if (!ok) {
+            _error = tr(
+              'widget.tv.theTelevisionDidNotAccept',
+              'The television did not accept that PIN.',
+            );
+          }
+        });
       }
-    });
+    }
   }
 
   @override
@@ -585,7 +595,9 @@ class _PairingState extends State<_Pairing> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 TextButton(
-                  onPressed: widget.tv.startPairing,
+                  // pairAgain, not startPairing: it reconnects first when
+                  // the pairing session has gone, which startPairing cannot.
+                  onPressed: () => unawaited(widget.tv.pairAgain()),
                   child: Text(tr('widget.tv.showPin', 'Show PIN')),
                 ),
                 SizedBox(
