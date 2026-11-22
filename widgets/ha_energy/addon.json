@@ -1,0 +1,17 @@
+{
+  "name": "Electricity",
+  "description": "Electricity used and what it cost — today, this week, this month or the last twelve, each against the one before, as bars. From your smart meter: today through Home Assistant, and the longer views from Bright, with its login in Settings. About half an hour behind, as the meter is.",
+  "author": "Vincent Willcox",
+  "authorUrl": "https://github.com/vwillcox",
+  "category": "Around the house",
+  "glyph": "🔌",
+  "version": "1.0.0",
+  "kind": "dart",
+  "entry": "ha_energy_widget.dart",
+  "types": [
+    "ha_energy"
+  ],
+  "permissions": [],
+  "minApp": "1.1.0",
+  "screenshot": "screenshot.png"
+}

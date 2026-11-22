@@ -1,0 +1,17 @@
+{
+  "name": "Fuel prices",
+  "description": "The cheapest petrol or diesel near home, from the prices Asda, Shell, JET, Applegreen, Morrisons, Moto, MFG, Rontec and SGN publish under the UK’s open fuel price scheme — no key needed.",
+  "author": "Vincent Willcox",
+  "authorUrl": "https://github.com/vwillcox",
+  "category": "Getting out",
+  "glyph": "⛽",
+  "version": "1.0.0",
+  "kind": "dart",
+  "entry": "fuel_widget.dart",
+  "types": [
+    "fuel"
+  ],
+  "permissions": [],
+  "minApp": "1.1.0",
+  "screenshot": "screenshot.png"
+}

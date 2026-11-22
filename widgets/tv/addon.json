@@ -1,0 +1,17 @@
+{
+  "name": "TV remote",
+  "description": "Controls a Hisense VIDAA television: power, volume, channel and a direction pad. Set the address in Settings → Television.",
+  "author": "Vincent Willcox",
+  "authorUrl": "https://github.com/vwillcox",
+  "category": "Photos, music & TV",
+  "glyph": "📺",
+  "version": "1.0.0",
+  "kind": "dart",
+  "entry": "tv_widget.dart",
+  "types": [
+    "tv"
+  ],
+  "permissions": [],
+  "minApp": "1.1.0",
+  "screenshot": "screenshot.png"
+}

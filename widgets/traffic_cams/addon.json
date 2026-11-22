@@ -1,0 +1,17 @@
+{
+  "name": "Traffic cameras",
+  "description": "Live pictures from the roads: any of London’s 900 TfL JamCams, found by road name or nearest home, or any other camera whose picture has a web address. Tap one to see it large. No key needed.",
+  "author": "Vincent Willcox",
+  "authorUrl": "https://github.com/vwillcox",
+  "category": "Getting out",
+  "glyph": "📷",
+  "version": "1.0.0",
+  "kind": "dart",
+  "entry": "traffic_cams_widget.dart",
+  "types": [
+    "traffic_cams"
+  ],
+  "permissions": [],
+  "minApp": "1.1.0",
+  "screenshot": "screenshot.png"
+}

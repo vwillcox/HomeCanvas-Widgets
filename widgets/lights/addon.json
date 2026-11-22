@@ -1,0 +1,17 @@
+{
+  "name": "Lights",
+  "description": "Govee lights and plugs. Tap one to switch it, drag along its bar for brightness, tap a colour. Works over the home network for devices with LAN Control turned on in the Govee app, or through Govee with an API key.",
+  "author": "Vincent Willcox",
+  "authorUrl": "https://github.com/vwillcox",
+  "category": "Around the house",
+  "glyph": "💡",
+  "version": "1.0.0",
+  "kind": "dart",
+  "entry": "lights_widget.dart",
+  "types": [
+    "lights"
+  ],
+  "permissions": [],
+  "minApp": "1.1.0",
+  "screenshot": "screenshot.png"
+}

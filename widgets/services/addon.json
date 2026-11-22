@@ -1,0 +1,17 @@
+{
+  "name": "Services",
+  "description": "A light per thing that should be up — Immich, CasaOS, the router, the Mac mini — with how quickly it answers. Tap one to check again, or to wake a sleeping computer.",
+  "author": "Vincent Willcox",
+  "authorUrl": "https://github.com/vwillcox",
+  "category": "Home lab",
+  "glyph": "🟢",
+  "version": "1.0.0",
+  "kind": "dart",
+  "entry": "services_widget.dart",
+  "types": [
+    "services"
+  ],
+  "permissions": [],
+  "minApp": "1.1.0",
+  "screenshot": "screenshot.png"
+}

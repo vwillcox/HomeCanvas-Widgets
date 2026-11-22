@@ -1,0 +1,18 @@
+{
+  "name": "Sun & moon",
+  "description": "Sunrise and sunset, where the sun is now, how fast the days are changing, and the moon’s phase. Worked out on the panel from the place set in Settings → Weather.",
+  "author": "Vincent Willcox",
+  "authorUrl": "https://github.com/vwillcox",
+  "category": "Time & day",
+  "glyph": "🌅",
+  "version": "1.0.0",
+  "kind": "dart",
+  "entry": "sun_moon_widget.dart",
+  "types": [
+    "sun_moon"
+  ],
+  "permissions": [],
+  "minApp": "1.1.0",
+  "screenshot": "screenshot.png",
+  "starter": true
+}

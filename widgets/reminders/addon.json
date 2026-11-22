@@ -1,0 +1,17 @@
+{
+  "name": "Reminders",
+  "description": "Reminders shared from the phone app — “Remind me to put the bins out at 7pm”, “Don’t forget the dentist tomorrow at 9:30”. Said aloud when they fall due; tap one when it’s done.",
+  "author": "Vincent Willcox",
+  "authorUrl": "https://github.com/vwillcox",
+  "category": "Time & day",
+  "glyph": "⏰",
+  "version": "1.0.0",
+  "kind": "dart",
+  "entry": "reminders_widget.dart",
+  "types": [
+    "reminders"
+  ],
+  "permissions": [],
+  "minApp": "1.1.0",
+  "screenshot": "screenshot.png"
+}

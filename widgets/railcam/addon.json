@@ -1,0 +1,17 @@
+{
+  "name": "Railcam",
+  "description": "Lineside cameras from railcam.uk: pick any of its 300 and touch one to watch it live on the panel — or have them playing in the tile, small and silent. Needs your own railcam.uk account — supporters’ cameras, a supporter’s.",
+  "author": "Vincent Willcox",
+  "authorUrl": "https://github.com/vwillcox",
+  "category": "Photos, music & TV",
+  "glyph": "🚂",
+  "version": "1.0.0",
+  "kind": "dart",
+  "entry": "railcam_widget.dart",
+  "types": [
+    "railcam"
+  ],
+  "permissions": [],
+  "minApp": "1.1.0",
+  "screenshot": "screenshot.png"
+}

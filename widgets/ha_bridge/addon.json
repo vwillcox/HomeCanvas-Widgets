@@ -1,0 +1,17 @@
+{
+  "name": "Home Assistant bridge",
+  "description": "Home Assistant as a starship’s console, for a page of its own: its rooms down the side, and each room’s lights and switches to tap, its temperatures, and all its lights on or off at once.",
+  "author": "Vincent Willcox",
+  "authorUrl": "https://github.com/vwillcox",
+  "category": "Around the house",
+  "glyph": "🖖",
+  "version": "1.0.0",
+  "kind": "dart",
+  "entry": "ha_bridge_widget.dart",
+  "types": [
+    "ha_bridge"
+  ],
+  "permissions": [],
+  "minApp": "1.1.0",
+  "screenshot": "screenshot.png"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Servers",
+  "description": "CPU, memory, disk and temperature for this Pi and your other machines, and whether their containers are running. Other machines need Glances — on CasaOS, one click in its app store.",
+  "author": "Vincent Willcox",
+  "authorUrl": "https://github.com/vwillcox",
+  "category": "Home lab",
+  "glyph": "🖥️",
+  "version": "1.0.0",
+  "kind": "dart",
+  "entry": "servers_widget.dart",
+  "types": [
+    "servers"
+  ],
+  "permissions": [],
+  "minApp": "1.1.0",
+  "screenshot": "screenshot.png"
+}

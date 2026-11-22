@@ -1,0 +1,17 @@
+{
+  "name": "Countdowns",
+  "description": "Days until the things you are looking forward to — birthdays, holidays, trips. The soonest first.",
+  "author": "Vincent Willcox",
+  "authorUrl": "https://github.com/vwillcox",
+  "category": "Time & day",
+  "glyph": "🗓️",
+  "version": "1.0.0",
+  "kind": "dart",
+  "entry": "countdowns_widget.dart",
+  "types": [
+    "countdowns"
+  ],
+  "permissions": [],
+  "minApp": "1.1.0",
+  "screenshot": "screenshot.png"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Departures (Europe & US)",
+  "description": "The next trains, trams, subways or buses from any station or stop across most of Europe and North America — the Netherlands, Germany, Switzerland, the Nordics, New York, Boston, Washington DC, Los Angeles and more — live where the operator shares it. From Transitous, the open journey planner — no key needed.",
+  "author": "Vincent Willcox",
+  "authorUrl": "https://github.com/vwillcox",
+  "category": "Getting out",
+  "glyph": "🚆",
+  "version": "1.0.0",
+  "kind": "dart",
+  "entry": "transit_widget.dart",
+  "types": [
+    "transit"
+  ],
+  "permissions": [],
+  "minApp": "1.1.0",
+  "screenshot": "screenshot.png"
+}

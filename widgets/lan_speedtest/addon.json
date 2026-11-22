@@ -1,0 +1,17 @@
+{
+  "name": "LAN speed test",
+  "description": "Speed between this panel and another machine on your network, using a self-hosted OpenSpeedTest server. Tap to run. Measures your own wiring rather than your internet connection.",
+  "author": "Vincent Willcox",
+  "authorUrl": "https://github.com/vwillcox",
+  "category": "Network",
+  "glyph": "🔁",
+  "version": "1.0.0",
+  "kind": "dart",
+  "entry": "lan_speedtest_widget.dart",
+  "types": [
+    "lan_speedtest"
+  ],
+  "permissions": [],
+  "minApp": "1.1.0",
+  "screenshot": "screenshot.png"
+}

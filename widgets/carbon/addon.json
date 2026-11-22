@@ -1,0 +1,17 @@
+{
+  "name": "Grid carbon",
+  "description": "How clean the electricity is right now in your region, the next day as bars, and the greenest three hours to run the washing machine or dishwasher. From National Grid ESO — no key needed.",
+  "author": "Vincent Willcox",
+  "authorUrl": "https://github.com/vwillcox",
+  "category": "Around the house",
+  "glyph": "⚡",
+  "version": "1.0.0",
+  "kind": "dart",
+  "entry": "carbon_widget.dart",
+  "types": [
+    "grid_carbon"
+  ],
+  "permissions": [],
+  "minApp": "1.1.0",
+  "screenshot": "screenshot.png"
+}

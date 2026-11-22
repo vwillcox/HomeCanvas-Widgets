@@ -1,0 +1,17 @@
+{
+  "name": "GitHub repository",
+  "description": "Stars, issues, pull requests, releases and a weekly commit chart for your GitHub repositories — a tab each — and, with a token, who has been visiting. No token needed for public ones.",
+  "author": "Vincent Willcox",
+  "authorUrl": "https://github.com/vwillcox",
+  "category": "Home lab",
+  "glyph": "🐙",
+  "version": "1.0.0",
+  "kind": "dart",
+  "entry": "github_widget.dart",
+  "types": [
+    "github"
+  ],
+  "permissions": [],
+  "minApp": "1.1.0",
+  "screenshot": "screenshot.png"
+}

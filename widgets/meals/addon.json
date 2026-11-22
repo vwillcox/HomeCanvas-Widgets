@@ -1,0 +1,17 @@
+{
+  "name": "Meal plan",
+  "description": "The week’s dinners: tonight’s large, tomorrow’s underneath. After dinner time it moves on to tomorrow.",
+  "author": "Vincent Willcox",
+  "authorUrl": "https://github.com/vwillcox",
+  "category": "Around the house",
+  "glyph": "🍽️",
+  "version": "1.0.0",
+  "kind": "dart",
+  "entry": "meals_widget.dart",
+  "types": [
+    "meals"
+  ],
+  "permissions": [],
+  "minApp": "1.1.0",
+  "screenshot": "screenshot.png"
+}

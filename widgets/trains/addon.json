@@ -1,0 +1,17 @@
+{
+  "name": "Train departures",
+  "description": "The next trains from your station, like the board on the platform: time, where to, platform, and whether it is on time. From Realtime Trains — it needs a free token from api-portal.rtt.io.",
+  "author": "Vincent Willcox",
+  "authorUrl": "https://github.com/vwillcox",
+  "category": "Getting out",
+  "glyph": "🚆",
+  "version": "1.0.0",
+  "kind": "dart",
+  "entry": "trains_widget.dart",
+  "types": [
+    "trains"
+  ],
+  "permissions": [],
+  "minApp": "1.1.0",
+  "screenshot": "screenshot.png"
+}

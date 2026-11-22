@@ -1,0 +1,17 @@
+{
+  "name": "Planes overhead",
+  "description": "The aircraft in the sky around home: who they are, where they’re flying from and to, how high, and which way to look. From adsb.lol, the open network of volunteer ADS-B receivers, and adsbdb — no key needed.",
+  "author": "Vincent Willcox",
+  "authorUrl": "https://github.com/vwillcox",
+  "category": "Getting out",
+  "glyph": "✈️",
+  "version": "1.0.0",
+  "kind": "dart",
+  "entry": "planes_widget.dart",
+  "types": [
+    "planes"
+  ],
+  "permissions": [],
+  "minApp": "1.1.0",
+  "screenshot": "screenshot.png"
+}

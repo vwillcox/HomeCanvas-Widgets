@@ -1,0 +1,17 @@
+{
+  "name": "Home Assistant",
+  "description": "Home Assistant entities you pick — temperatures, who is home, what is playing — each as a small card. Lights and switches change with a tap; locks and doors are only ever shown.",
+  "author": "Vincent Willcox",
+  "authorUrl": "https://github.com/vwillcox",
+  "category": "Around the house",
+  "glyph": "🏡",
+  "version": "1.0.0",
+  "kind": "dart",
+  "entry": "home_assistant_widget.dart",
+  "types": [
+    "home_assistant"
+  ],
+  "permissions": [],
+  "minApp": "1.1.0",
+  "screenshot": "screenshot.png"
+}

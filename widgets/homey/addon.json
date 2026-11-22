@@ -1,0 +1,32 @@
+{
+  "name": "Homey",
+  "description": "Sixteen tiles for a Homey hub: devices, rooms, lights, flows, light colour, fans, the whole house, moods, alerts, climate, energy, history, who’s home, variables, the timeline and the hub itself.",
+  "author": "Vincent Willcox",
+  "authorUrl": "https://github.com/vwillcox",
+  "category": "Homey",
+  "glyph": "🏠",
+  "version": "1.0.0",
+  "kind": "dart",
+  "entry": "homey_widgets.dart",
+  "types": [
+    "homey",
+    "homey_room",
+    "homey_lights",
+    "homey_flows",
+    "homey_colour",
+    "homey_fan",
+    "homey_house",
+    "homey_moods",
+    "homey_alerts",
+    "homey_climate",
+    "homey_energy",
+    "homey_history",
+    "homey_presence",
+    "homey_variables",
+    "homey_timeline",
+    "homey_system"
+  ],
+  "permissions": [],
+  "minApp": "1.1.0",
+  "screenshot": "screenshot.png"
+}

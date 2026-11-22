@@ -1,0 +1,17 @@
+{
+  "name": "Updates",
+  "description": "Updates waiting across the house: Immich against its latest release, Home Assistant’s own updates, and UniFi firmware — in one list, or a tick when there are none.",
+  "author": "Vincent Willcox",
+  "authorUrl": "https://github.com/vwillcox",
+  "category": "Home lab",
+  "glyph": "⬆️",
+  "version": "1.0.0",
+  "kind": "dart",
+  "entry": "updates_widget.dart",
+  "types": [
+    "updates"
+  ],
+  "permissions": [],
+  "minApp": "1.1.0",
+  "screenshot": "screenshot.png"
+}

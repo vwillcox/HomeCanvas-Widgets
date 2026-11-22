@@ -1,0 +1,17 @@
+{
+  "name": "Radio",
+  "description": "Internet radio on the panel’s speakers. Pick stations from around the world, or add any stream by its address, then tap one to tune in. It keeps playing when the dashboard turns the page. Given a page to itself it can show the song’s cover and what played before, an old set’s tuning dial, or a grid of stations.",
+  "author": "Vincent Willcox",
+  "authorUrl": "https://github.com/vwillcox",
+  "category": "Photos, music & TV",
+  "glyph": "📻",
+  "version": "1.0.0",
+  "kind": "dart",
+  "entry": "radio_widget.dart",
+  "types": [
+    "radio"
+  ],
+  "permissions": [],
+  "minApp": "1.1.0",
+  "screenshot": "screenshot.png"
+}

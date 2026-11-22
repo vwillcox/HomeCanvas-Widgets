@@ -1,0 +1,18 @@
+{
+  "name": "London transport",
+  "description": "Whether the Tube, Elizabeth line, Overground, DLR and trams are running, and the next arrivals at your stop.",
+  "author": "Vincent Willcox",
+  "authorUrl": "https://github.com/vwillcox",
+  "category": "Getting out",
+  "glyph": "🚇",
+  "version": "1.0.0",
+  "kind": "dart",
+  "entry": "tfl_widgets.dart",
+  "types": [
+    "tfl_lines",
+    "tfl_arrivals"
+  ],
+  "permissions": [],
+  "minApp": "1.1.0",
+  "screenshot": "screenshot.png"
+}

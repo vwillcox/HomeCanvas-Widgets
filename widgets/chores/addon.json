@@ -1,0 +1,17 @@
+{
+  "name": "Chores & rewards",
+  "description": "A column per person with today’s chores to tap off. Each earns stars; a weekly goal unlocks a reward. \"Anyone\" chores appear for everybody and go to whoever does them. Resets each Monday.",
+  "author": "Vincent Willcox",
+  "authorUrl": "https://github.com/vwillcox",
+  "category": "Around the house",
+  "glyph": "⭐",
+  "version": "1.0.0",
+  "kind": "dart",
+  "entry": "chores_widget.dart",
+  "types": [
+    "chores"
+  ],
+  "permissions": [],
+  "minApp": "1.1.0",
+  "screenshot": "screenshot.png"
+}

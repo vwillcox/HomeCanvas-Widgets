@@ -1,0 +1,17 @@
+{
+  "name": "Air & pollen",
+  "description": "Air quality, today’s pollen for grass, trees and weeds, and UV, for the place set in Settings → Weather. From Open-Meteo, like the weather.",
+  "author": "Vincent Willcox",
+  "authorUrl": "https://github.com/vwillcox",
+  "category": "Weather & air",
+  "glyph": "🌿",
+  "version": "1.0.0",
+  "kind": "dart",
+  "entry": "air_quality_widget.dart",
+  "types": [
+    "air_quality"
+  ],
+  "permissions": [],
+  "minApp": "1.1.0",
+  "screenshot": "screenshot.png"
+}

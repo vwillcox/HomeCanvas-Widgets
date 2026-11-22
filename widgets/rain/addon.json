@@ -1,0 +1,17 @@
+{
+  "name": "Rain soon",
+  "description": "Whether it is about to rain: the next two hours in a sentence — \"Rain from 14:20, light\" — and as bars. For the place in Settings → Weather.",
+  "author": "Vincent Willcox",
+  "authorUrl": "https://github.com/vwillcox",
+  "category": "Weather & air",
+  "glyph": "☔",
+  "version": "1.0.0",
+  "kind": "dart",
+  "entry": "rain_widget.dart",
+  "types": [
+    "rain"
+  ],
+  "permissions": [],
+  "minApp": "1.1.0",
+  "screenshot": "screenshot.png"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Speed test",
+  "description": "Runs Ookla speedtest and shows download and upload on one dial as it goes, with ping, jitter and packet loss. Tap to start. Needs the speedtest CLI installed — see INSTALL.md.",
+  "author": "Vincent Willcox",
+  "authorUrl": "https://github.com/vwillcox",
+  "category": "Network",
+  "glyph": "📶",
+  "version": "1.0.0",
+  "kind": "dart",
+  "entry": "speedtest_widget.dart",
+  "types": [
+    "speedtest"
+  ],
+  "permissions": [],
+  "minApp": "1.1.0",
+  "screenshot": "screenshot.png"
+}

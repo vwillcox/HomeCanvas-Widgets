@@ -1,0 +1,17 @@
+{
+  "name": "Tides",
+  "description": "High and low tide times, whether the water is coming in or going out, and the sea’s height through the day — anywhere on the coast. From Open-Meteo’s tide model, no key needed. Modelled, not measured: fine for a walk on the beach, not for navigation.",
+  "author": "Vincent Willcox",
+  "authorUrl": "https://github.com/vwillcox",
+  "category": "Getting out",
+  "glyph": "🌊",
+  "version": "1.0.0",
+  "kind": "dart",
+  "entry": "tides_widget.dart",
+  "types": [
+    "tides"
+  ],
+  "permissions": [],
+  "minApp": "1.1.0",
+  "screenshot": "screenshot.png"
+}

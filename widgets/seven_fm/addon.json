@@ -1,0 +1,17 @@
+{
+  "name": "StreamingSoundtracks",
+  "description": "StreamingSoundtracks.com — film, game and TV scores — on the panel’s speakers, with the album and its cover, how far through the track is, what is coming up and who asked for it, and what played before. Or one of its sister stations: 1980s.FM, Adagio.FM, Death.FM or Entranced.FM.",
+  "author": "Vincent Willcox",
+  "authorUrl": "https://github.com/vwillcox",
+  "category": "Photos, music & TV",
+  "glyph": "🎬",
+  "version": "1.0.0",
+  "kind": "dart",
+  "entry": "seven_fm_widget.dart",
+  "types": [
+    "sevenFm"
+  ],
+  "permissions": [],
+  "minApp": "1.1.0",
+  "screenshot": "screenshot.png"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Bin day",
+  "description": "Which bins go out next and when. From the evening before it says to put them out; tap it once they are out.",
+  "author": "Vincent Willcox",
+  "authorUrl": "https://github.com/vwillcox",
+  "category": "Around the house",
+  "glyph": "🗑️",
+  "version": "1.0.0",
+  "kind": "dart",
+  "entry": "bins_widget.dart",
+  "types": [
+    "bins"
+  ],
+  "permissions": [],
+  "minApp": "1.1.0",
+  "screenshot": "screenshot.png"
+}

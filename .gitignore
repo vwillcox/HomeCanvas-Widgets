@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.DS_Store
+# A checkout of the app, for tools/shots.sh and tools/try.sh.
+/.app/
+/index.json

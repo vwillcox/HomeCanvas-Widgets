@@ -1,0 +1,17 @@
+{
+  "name": "Certificates",
+  "description": "Days left on your sites’ HTTPS certificates, the soonest to expire first — so a renewal that quietly failed is caught before visitors see a warning.",
+  "author": "Vincent Willcox",
+  "authorUrl": "https://github.com/vwillcox",
+  "category": "Home lab",
+  "glyph": "🔒",
+  "version": "1.0.0",
+  "kind": "dart",
+  "entry": "certs_widget.dart",
+  "types": [
+    "certs"
+  ],
+  "permissions": [],
+  "minApp": "1.1.0",
+  "screenshot": "screenshot.png"
+}

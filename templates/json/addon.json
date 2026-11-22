@@ -1,0 +1,16 @@
+{
+  "name": "My widget",
+  "description": "One or two sentences saying what it shows and where that comes from.",
+  "author": "Your name",
+  "authorUrl": "https://github.com/your-name",
+  "category": "Other",
+  "glyph": "🧩",
+  "version": "1.0.0",
+  "kind": "json",
+  "types": [
+    "custom_my_widget"
+  ],
+  "permissions": [],
+  "minApp": "1.1.0",
+  "screenshot": "screenshot.png"
+}

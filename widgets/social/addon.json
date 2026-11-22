@@ -1,0 +1,18 @@
+{
+  "name": "Mastodon & Bluesky",
+  "description": "Your Mastodon and Bluesky timelines, notifications, lists and feeds, signed in.",
+  "author": "Vincent Willcox",
+  "authorUrl": "https://github.com/vwillcox",
+  "category": "News & reference",
+  "glyph": "🐘",
+  "version": "1.0.0",
+  "kind": "dart",
+  "entry": "social_widgets.dart",
+  "types": [
+    "mastodon",
+    "bluesky"
+  ],
+  "permissions": [],
+  "minApp": "1.1.0",
+  "screenshot": "screenshot.png"
+}

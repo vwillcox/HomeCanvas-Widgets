@@ -1,0 +1,18 @@
+{
+  "name": "Timers",
+  "description": "Kitchen timers. Tap a time to start one, tap its ring to pause, hold to cancel. When one is done it plays a sound and says which timer it was; tap the ring to stop it. They keep running when you leave the dashboard.",
+  "author": "Vincent Willcox",
+  "authorUrl": "https://github.com/vwillcox",
+  "category": "Time & day",
+  "glyph": "⏲️",
+  "version": "1.0.0",
+  "kind": "dart",
+  "entry": "timers_widget.dart",
+  "types": [
+    "timers"
+  ],
+  "permissions": [],
+  "minApp": "1.1.0",
+  "screenshot": "screenshot.png",
+  "starter": true
+}

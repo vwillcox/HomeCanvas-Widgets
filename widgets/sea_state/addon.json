@@ -1,0 +1,16 @@
+{
+  "name": "Sea state",
+  "description": "The sea at a place you choose: its level against the mean, how high the waves are, and how warm the water is. From Open-Meteo, which asks for no key.",
+  "author": "Vincent Willcox",
+  "authorUrl": "https://github.com/vwillcox",
+  "category": "Weather & air",
+  "glyph": "🌊",
+  "version": "1.0.0",
+  "kind": "json",
+  "types": [
+    "custom_sea_state"
+  ],
+  "permissions": [],
+  "minApp": "1.1.0",
+  "screenshot": "screenshot.png"
+}

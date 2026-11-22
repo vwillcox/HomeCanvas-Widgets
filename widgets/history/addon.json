@@ -1,0 +1,17 @@
+{
+  "name": "On this day in history",
+  "description": "Something that happened on this date, from Wikipedia — a new one every half minute, or tap for the next.",
+  "author": "Vincent Willcox",
+  "authorUrl": "https://github.com/vwillcox",
+  "category": "News & reference",
+  "glyph": "📜",
+  "version": "1.0.0",
+  "kind": "dart",
+  "entry": "history_widget.dart",
+  "types": [
+    "history"
+  ],
+  "permissions": [],
+  "minApp": "1.1.0",
+  "screenshot": "screenshot.png"
+}

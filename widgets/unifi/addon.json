@@ -1,0 +1,22 @@
+{
+  "name": "UniFi network",
+  "description": "Six tiles for a UniFi network: its health, who’s home, devices, clients, WAN throughput and the router’s own speed test.",
+  "author": "Vincent Willcox",
+  "authorUrl": "https://github.com/vwillcox",
+  "category": "UniFi",
+  "glyph": "🛜",
+  "version": "1.0.0",
+  "kind": "dart",
+  "entry": "unifi_widgets.dart",
+  "types": [
+    "unifi_health",
+    "unifi_presence",
+    "unifi_devices",
+    "unifi_clients",
+    "unifi_throughput",
+    "unifi_isp"
+  ],
+  "permissions": [],
+  "minApp": "1.1.0",
+  "screenshot": "screenshot.png"
+}

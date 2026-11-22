@@ -1,0 +1,17 @@
+{
+  "name": "Shopping list",
+  "description": "One list the whole house shares. Add to it from any phone on the home network at the editor’s address followed by /list; tap an item on the panel to tick it off. Ticked items clear themselves after half a day.",
+  "author": "Vincent Willcox",
+  "authorUrl": "https://github.com/vwillcox",
+  "category": "Around the house",
+  "glyph": "🧺",
+  "version": "1.0.0",
+  "kind": "dart",
+  "entry": "shopping_widget.dart",
+  "types": [
+    "shopping"
+  ],
+  "permissions": [],
+  "minApp": "1.1.0",
+  "screenshot": "screenshot.png"
+}

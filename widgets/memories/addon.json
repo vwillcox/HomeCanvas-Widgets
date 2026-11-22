@@ -1,0 +1,17 @@
+{
+  "name": "On this day",
+  "description": "Your photos from this date in past years, from Immich’s memories, with how long ago and where. Tap or swipe for the next.",
+  "author": "Vincent Willcox",
+  "authorUrl": "https://github.com/vwillcox",
+  "category": "Photos, music & TV",
+  "glyph": "📸",
+  "version": "1.0.0",
+  "kind": "dart",
+  "entry": "memories_widget.dart",
+  "types": [
+    "memories"
+  ],
+  "permissions": [],
+  "minApp": "1.1.0",
+  "screenshot": "screenshot.png"
+}

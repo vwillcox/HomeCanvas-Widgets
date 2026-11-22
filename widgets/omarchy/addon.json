@@ -1,0 +1,17 @@
+{
+  "name": "Omarchy hotkeys",
+  "description": "The Omarchy keyboard shortcuts as a cheat sheet, one section at a time. Tap a section to jump to it, or tap the sheet to turn the page. Sized for a page of its own.",
+  "author": "Vincent Willcox",
+  "authorUrl": "https://github.com/vwillcox",
+  "category": "News & reference",
+  "glyph": "⌨️",
+  "version": "1.0.0",
+  "kind": "dart",
+  "entry": "omarchy_widget.dart",
+  "types": [
+    "omarchy"
+  ],
+  "permissions": [],
+  "minApp": "1.1.0",
+  "screenshot": "screenshot.png"
+}

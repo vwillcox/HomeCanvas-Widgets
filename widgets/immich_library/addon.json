@@ -1,0 +1,17 @@
+{
+  "name": "Immich library",
+  "description": "Your Immich library in numbers — photos, videos, how much space it takes, how many added lately — with the newest photos along the bottom.",
+  "author": "Vincent Willcox",
+  "authorUrl": "https://github.com/vwillcox",
+  "category": "Photos, music & TV",
+  "glyph": "🗂️",
+  "version": "1.0.0",
+  "kind": "dart",
+  "entry": "immich_library_widget.dart",
+  "types": [
+    "immich_library"
+  ],
+  "permissions": [],
+  "minApp": "1.1.0",
+  "screenshot": "screenshot.png"
+}

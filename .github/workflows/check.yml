@@ -1,0 +1,141 @@
+# Every widget sent here is checked twice over before anyone can download it.
+#
+#   safety         reads each add-on for what it should not do. Runs nothing
+#                  an add-on contains.
+#   compatibility  builds every add-on into HomeCanvas itself, has the
+#                  analyser read them there, and runs their tests.
+#   publish        on main only, and only when both passed: writes the index
+#                  panels read to the `catalogue` branch.
+#
+# A pull request's own run is advice for whoever sent it and whoever reviews
+# it. What panels download is decided by the run on main, with main's copy
+# of these checks — so a change that weakened them in passing would still
+# have to get past a maintainer, and nothing reaches the catalogue from a
+# branch.
+name: Check add-ons
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: check-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+jobs:
+  safety:
+    name: Safety
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      # The checks as main has them, not as the change would like them.
+      - name: Take the checks from the branch being changed
+        if: github.event_name == 'pull_request'
+        env:
+          BASE_REF: ${{ github.base_ref }}
+        run: |
+          git show "origin/$BASE_REF:tools/catalogue.py" > "$RUNNER_TEMP/catalogue.py" \
+            || cp tools/catalogue.py "$RUNNER_TEMP/catalogue.py"
+          # Read where it stands, beside the widgets it is to check.
+          cp "$RUNNER_TEMP/catalogue.py" tools/catalogue.py
+      - name: The checks check themselves
+        if: github.event_name != 'pull_request'
+        run: python3 -m unittest tools/test_catalogue.py
+      - name: Read every add-on
+        env:
+          BASE: ${{ github.event_name == 'pull_request' && format('origin/{0}', github.base_ref) || '' }}
+          OWNER: ${{ github.event.pull_request.author_association == 'OWNER' && '--owner' || '' }}
+        run: |
+          if [ -n "$BASE" ]; then
+            python3 tools/catalogue.py check --base "$BASE" $OWNER
+          else
+            python3 tools/catalogue.py check
+          fi
+
+  compatibility:
+    name: Compatibility
+    needs: safety
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: catalogue
+          persist-credentials: false
+      - name: Which HomeCanvas, and which Flutter
+        id: which
+        run: |
+          echo "app=$(cat catalogue/app-ref)" >> "$GITHUB_OUTPUT"
+          echo "flutter=$(cat catalogue/.flutter-version)" >> "$GITHUB_OUTPUT"
+      - uses: actions/checkout@v4
+        with:
+          repository: vwillcox/HomeCanvas
+          ref: ${{ steps.which.outputs.app }}
+          path: app
+          persist-credentials: false
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: ${{ steps.which.outputs.flutter }}
+          channel: stable
+          cache: true
+      - name: Hold each add-on to the app it says it needs
+        run: python3 catalogue/tools/catalogue.py check --app app
+      - name: Build the add-ons into the app
+        working-directory: app
+        env:
+          HOMECANVAS_ADDONS: ${{ github.workspace }}/catalogue/widgets
+          HOMECANVAS_ADDON_TESTS: "1"
+          HOMECANVAS_WIDGETS: ${{ runner.temp }}/widgets-src
+          HOMECANVAS_WIDGET_STATE: ${{ runner.temp }}/widget-state
+        run: |
+          bash scripts/widget-build.sh generate
+          flutter pub get
+      - name: Have the analyser read them
+        working-directory: app
+        run: |
+          flutter analyze --no-pub --no-fatal-infos --no-fatal-warnings \
+            lib/dashboard/widgets/custom test/addons
+      - name: Run their tests
+        working-directory: app
+        run: flutter test --no-pub test/addons test/editor_schema_test.dart
+
+  publish:
+    name: Publish the catalogue
+    needs: [safety, compatibility]
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    concurrency:
+      group: publish
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Write the index
+        run: python3 tools/catalogue.py index --commit "$GITHUB_SHA" --out "$RUNNER_TEMP/index.json"
+      - name: Put it on the catalogue branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git ls-remote --exit-code origin refs/heads/catalogue >/dev/null; then
+            git worktree add -B catalogue "$RUNNER_TEMP/pub" origin/catalogue
+          else
+            git worktree add --detach "$RUNNER_TEMP/pub"
+            git -C "$RUNNER_TEMP/pub" checkout --orphan catalogue
+            git -C "$RUNNER_TEMP/pub" rm -rfq .
+          fi
+          cp "$RUNNER_TEMP/index.json" "$RUNNER_TEMP/pub/index.json"
+          cd "$RUNNER_TEMP/pub"
+          git add index.json
+          git commit -qm "Catalogue at ${GITHUB_SHA::10}"
+          git push origin catalogue
