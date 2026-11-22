@@ -58,7 +58,7 @@ class Checks(unittest.TestCase):
             "entry": "tide.dart",
             "types": ["tide"],
             "permissions": [],
-            "minApp": "1.1.0",
+            "minApp": "2.0.0",
             "screenshot": "screenshot.png",
             **manifest,
         }

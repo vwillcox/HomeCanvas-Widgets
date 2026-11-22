@@ -46,7 +46,7 @@ and underscores.
   "entry": "tide_times.dart",
   "types": ["tide_times"],
   "permissions": [],
-  "minApp": "1.1.0",
+  "minApp": "2.0.0",
   "screenshot": "screenshot.png"
 }
 ```

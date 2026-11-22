@@ -11,6 +11,6 @@
     "custom_sea_state"
   ],
   "permissions": [],
-  "minApp": "1.1.0",
+  "minApp": "2.0.0",
   "screenshot": "screenshot.png"
 }
