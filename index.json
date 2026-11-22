@@ -1,8 +1,8 @@
 {
  "schema": 1,
  "repo": "vwillcox/HomeCanvas-Widgets",
- "commit": "7e2cd60b3c5c04a96e92a0f12452a893dac4c56e",
- "generated": "2026-11-22T09:57:58Z",
+ "commit": "13408844f40492dfddaebf9badecd6a01812f3ca",
+ "generated": "2026-11-22T10:34:58Z",
  "addons": [
   {
    "id": "air_quality",
@@ -76,6 +76,32 @@
      "path": "birthdays_widget.dart",
      "sha256": "0beb5d1d70fe958fbfba8bd266754dbf0d6cdbe431d0d85d9f4e32b755eb21a7",
      "size": 9402
+    }
+   ]
+  },
+  {
+   "id": "calendar",
+   "name": "Calendar",
+   "description": "Upcoming events from one or more published calendar links, as a schedule or a month.",
+   "author": "Vincent Willcox",
+   "authorUrl": "https://github.com/vwillcox",
+   "category": "Time & day",
+   "glyph": "📅",
+   "version": "1.0.0",
+   "kind": "dart",
+   "entry": "calendar_widget.dart",
+   "types": [
+    "calendar"
+   ],
+   "permissions": [],
+   "minApp": "2.0.0",
+   "screenshot": "screenshot.png",
+   "starter": true,
+   "files": [
+    {
+     "path": "calendar_widget.dart",
+     "sha256": "288420bd5ac114c4127c18df21cf20c2173a2eb4d5ac595873f5d1fe4614d923",
+     "size": 3164
     }
    ]
   },
@@ -650,6 +676,31 @@
      "path": "omarchy_widget.dart",
      "sha256": "f03b37a4c1b6261bfd5957b92edf6585280d51d04e1058f752b3746e35b91cf2",
      "size": 22518
+    }
+   ]
+  },
+  {
+   "id": "parcels",
+   "name": "Parcels",
+   "description": "Parcels on their way: share a tracking link or number to the panel from the phone app — a Royal Mail, DPD, Evri or Yodel email, a courier’s page — and it goes on this list. With a tracking service set below, each is looked up every half an hour and pops up when it is out for delivery or has come. Tap one for its story and its carrier’s page.",
+   "author": "Vincent Willcox",
+   "authorUrl": "https://github.com/vwillcox",
+   "category": "Around the house",
+   "glyph": "📦",
+   "version": "1.0.0",
+   "kind": "dart",
+   "entry": "parcels_widget.dart",
+   "types": [
+    "parcels"
+   ],
+   "permissions": [],
+   "minApp": "2.0.0",
+   "screenshot": "screenshot.png",
+   "files": [
+    {
+     "path": "parcels_widget.dart",
+     "sha256": "c68f87237c3c4257ddbc18626f0f9116a0e4cf7cc3e41e424a3615b7e1aab495",
+     "size": 2627
     }
    ]
   },
