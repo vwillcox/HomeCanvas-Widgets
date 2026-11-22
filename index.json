@@ -1,8 +1,8 @@
 {
  "schema": 1,
  "repo": "vwillcox/HomeCanvas-Widgets",
- "commit": "368a635b2bb735664e70ee22596c597d5b91b737",
- "generated": "2026-11-22T11:48:57Z",
+ "commit": "c633297708897f2d775f3d8a77eb9336ae568555",
+ "generated": "2026-11-22T11:55:05Z",
  "addons": [
   {
    "id": "air_quality",
