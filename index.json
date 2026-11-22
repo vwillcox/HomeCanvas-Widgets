@@ -1,8 +1,8 @@
 {
  "schema": 1,
  "repo": "vwillcox/HomeCanvas-Widgets",
- "commit": "204af9e797b496436caa7a8673706e0032b7bd7a",
- "generated": "2026-11-22T09:37:44Z",
+ "commit": "e8683451313b305f87608968368b06d6541d2659",
+ "generated": "2026-11-22T09:51:47Z",
  "addons": [
   {
    "id": "air_quality",
@@ -1190,7 +1190,7 @@
    "authorUrl": "https://github.com/vwillcox",
    "category": "Photos, music & TV",
    "glyph": "📺",
-   "version": "1.0.0",
+   "version": "1.0.1",
    "kind": "dart",
    "entry": "tv_widget.dart",
    "types": [
@@ -1202,8 +1202,8 @@
    "files": [
     {
      "path": "tv_widget.dart",
-     "sha256": "fe5b1b1361ed376dd88ab742f9487cf912cfc21c38f9e542463136d6b73894df",
-     "size": 24574
+     "sha256": "32876a51ef34722d8d088286426b13b91293ba152c7ccd71ed6e0fbbfb89bbd9",
+     "size": 25101
     }
    ]
   },
