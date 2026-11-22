@@ -1,8 +1,8 @@
 {
  "schema": 1,
  "repo": "vwillcox/HomeCanvas-Widgets",
- "commit": "c633297708897f2d775f3d8a77eb9336ae568555",
- "generated": "2026-11-22T11:55:05Z",
+ "commit": "9d1f663030378d481c1d5b8c705da94b8ac6bb15",
+ "generated": "2026-11-22T12:37:02Z",
  "addons": [
   {
    "id": "air_quality",
@@ -1088,6 +1088,48 @@
      "path": "spotify_widget.dart",
      "sha256": "55110853289c67631b7d157389d7e18403978933e8a4dc6158af9d5d22c8f7c5",
      "size": 20905
+    }
+   ]
+  },
+  {
+   "id": "streamerdeck",
+   "name": "StreamerDeck",
+   "description": "A Stream Deck on the panel: keys that run your computer and the house. Needs StreamerDeck, an app you build and run on the computer (github.com/vwillcox/StreamerDeck), which connects here with a Share Inbox sender's token and holds the editor the keys are laid out in.",
+   "author": "Vincent Willcox",
+   "authorUrl": "https://github.com/vwillcox",
+   "category": "Home lab",
+   "glyph": "🎛️",
+   "version": "1.0.1",
+   "kind": "dart",
+   "entry": "streamerdeck.dart",
+   "types": [
+    "streamerdeck"
+   ],
+   "permissions": [
+    "files"
+   ],
+   "minApp": "2.0.0",
+   "screenshot": "screenshot.png",
+   "files": [
+    {
+     "path": "deck_link.dart",
+     "sha256": "bc7a51cccaa24dce1911d8f565f5be6a64e8ea52f2aa5e3e18f1f8f46bbb4950",
+     "size": 20915
+    },
+    {
+     "path": "deck_model.dart",
+     "sha256": "38dd82955877a2c9bea33ce1fe430c394622c8fe5fe314034f085809a7afb212",
+     "size": 7637
+    },
+    {
+     "path": "deck_screen.dart",
+     "sha256": "ceb8767e63eaaed1cac364ea06394bf01995073ee0d5a5864336c79ca3d2ff5f",
+     "size": 25322
+    },
+    {
+     "path": "streamerdeck.dart",
+     "sha256": "d87d8e6a0f514bdaa29a9e768dfe6877de4470d2c1c89656c69d6cf1ff71f525",
+     "size": 12825
     }
    ]
   },
