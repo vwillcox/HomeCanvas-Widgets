@@ -1,0 +1,19 @@
+{
+  "name": "StreamerDeck",
+  "description": "A Stream Deck on the panel: keys that run your computer and the house. Needs StreamerDeck, an app you build and run on the computer (github.com/vwillcox/StreamerDeck), which connects here with a Share Inbox sender's token and holds the editor the keys are laid out in.",
+  "author": "Vincent Willcox",
+  "authorUrl": "https://github.com/vwillcox",
+  "category": "Home lab",
+  "glyph": "🎛️",
+  "version": "1.0.0",
+  "kind": "dart",
+  "entry": "streamerdeck.dart",
+  "types": [
+    "streamerdeck"
+  ],
+  "permissions": [
+    "files"
+  ],
+  "minApp": "2.0.0",
+  "screenshot": "screenshot.png"
+}
