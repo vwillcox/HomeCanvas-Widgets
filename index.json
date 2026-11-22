@@ -1,0 +1,1317 @@
+{
+ "schema": 1,
+ "repo": "vwillcox/HomeCanvas-Widgets",
+ "commit": "204af9e797b496436caa7a8673706e0032b7bd7a",
+ "generated": "2026-11-22T09:37:44Z",
+ "addons": [
+  {
+   "id": "air_quality",
+   "name": "Air & pollen",
+   "description": "Air quality, today’s pollen for grass, trees and weeds, and UV, for the place set in Settings → Weather. From Open-Meteo, like the weather.",
+   "author": "Vincent Willcox",
+   "authorUrl": "https://github.com/vwillcox",
+   "category": "Weather & air",
+   "glyph": "🌿",
+   "version": "1.0.0",
+   "kind": "dart",
+   "entry": "air_quality_widget.dart",
+   "types": [
+    "air_quality"
+   ],
+   "permissions": [],
+   "minApp": "1.1.0",
+   "screenshot": "screenshot.png",
+   "files": [
+    {
+     "path": "air_quality_widget.dart",
+     "sha256": "abad0b27e0515ce3c3f60b0bb841309d74f58d2318f7a40951f3287b4064290f",
+     "size": 8410
+    }
+   ]
+  },
+  {
+   "id": "bins",
+   "name": "Bin day",
+   "description": "Which bins go out next and when. From the evening before it says to put them out; tap it once they are out.",
+   "author": "Vincent Willcox",
+   "authorUrl": "https://github.com/vwillcox",
+   "category": "Around the house",
+   "glyph": "🗑️",
+   "version": "1.0.0",
+   "kind": "dart",
+   "entry": "bins_widget.dart",
+   "types": [
+    "bins"
+   ],
+   "permissions": [],
+   "minApp": "1.1.0",
+   "screenshot": "screenshot.png",
+   "files": [
+    {
+     "path": "bins_widget.dart",
+     "sha256": "7773dc503c78e882fe8228bf8f7739cd61c5f20133c76fcf112fa59ffe5f0dac",
+     "size": 9377
+    }
+   ]
+  },
+  {
+   "id": "birthdays",
+   "name": "Birthdays",
+   "description": "Birthdays coming up, with faces, from the people Immich recognises in your photos. Set a date of birth on a person in Immich and they appear here.",
+   "author": "Vincent Willcox",
+   "authorUrl": "https://github.com/vwillcox",
+   "category": "Photos, music & TV",
+   "glyph": "🎂",
+   "version": "1.0.0",
+   "kind": "dart",
+   "entry": "birthdays_widget.dart",
+   "types": [
+    "birthdays"
+   ],
+   "permissions": [],
+   "minApp": "1.1.0",
+   "screenshot": "screenshot.png",
+   "files": [
+    {
+     "path": "birthdays_widget.dart",
+     "sha256": "0beb5d1d70fe958fbfba8bd266754dbf0d6cdbe431d0d85d9f4e32b755eb21a7",
+     "size": 9402
+    }
+   ]
+  },
+  {
+   "id": "carbon",
+   "name": "Grid carbon",
+   "description": "How clean the electricity is right now in your region, the next day as bars, and the greenest three hours to run the washing machine or dishwasher. From National Grid ESO — no key needed.",
+   "author": "Vincent Willcox",
+   "authorUrl": "https://github.com/vwillcox",
+   "category": "Around the house",
+   "glyph": "⚡",
+   "version": "1.0.0",
+   "kind": "dart",
+   "entry": "carbon_widget.dart",
+   "types": [
+    "grid_carbon"
+   ],
+   "permissions": [],
+   "minApp": "1.1.0",
+   "screenshot": "screenshot.png",
+   "files": [
+    {
+     "path": "carbon_widget.dart",
+     "sha256": "364f90854412a1c002100eb26132f452790f61e8d7b80914ac1914d40d36175a",
+     "size": 10388
+    }
+   ]
+  },
+  {
+   "id": "certs",
+   "name": "Certificates",
+   "description": "Days left on your sites’ HTTPS certificates, the soonest to expire first — so a renewal that quietly failed is caught before visitors see a warning.",
+   "author": "Vincent Willcox",
+   "authorUrl": "https://github.com/vwillcox",
+   "category": "Home lab",
+   "glyph": "🔒",
+   "version": "1.0.0",
+   "kind": "dart",
+   "entry": "certs_widget.dart",
+   "types": [
+    "certs"
+   ],
+   "permissions": [],
+   "minApp": "1.1.0",
+   "screenshot": "screenshot.png",
+   "files": [
+    {
+     "path": "certs_widget.dart",
+     "sha256": "11492c89955b7a291361f45247d10a7294e45c8fab8ab7d7a7bdb161d8c05acc",
+     "size": 9451
+    }
+   ]
+  },
+  {
+   "id": "chores",
+   "name": "Chores & rewards",
+   "description": "A column per person with today’s chores to tap off. Each earns stars; a weekly goal unlocks a reward. \"Anyone\" chores appear for everybody and go to whoever does them. Resets each Monday.",
+   "author": "Vincent Willcox",
+   "authorUrl": "https://github.com/vwillcox",
+   "category": "Around the house",
+   "glyph": "⭐",
+   "version": "1.0.0",
+   "kind": "dart",
+   "entry": "chores_widget.dart",
+   "types": [
+    "chores"
+   ],
+   "permissions": [],
+   "minApp": "1.1.0",
+   "screenshot": "screenshot.png",
+   "files": [
+    {
+     "path": "chores_widget.dart",
+     "sha256": "a5fdd237995c76805ed58cb5ba4545600747d2ab4d42bad07f8cc1154be41f95",
+     "size": 15812
+    }
+   ]
+  },
+  {
+   "id": "clock",
+   "name": "Clock",
+   "description": "The time, with the date underneath.",
+   "author": "Vincent Willcox",
+   "authorUrl": "https://github.com/vwillcox",
+   "category": "Time & day",
+   "glyph": "🕰",
+   "version": "1.0.0",
+   "kind": "dart",
+   "entry": "clock_widget.dart",
+   "types": [
+    "clock"
+   ],
+   "permissions": [],
+   "minApp": "1.1.0",
+   "screenshot": "screenshot.png",
+   "starter": true,
+   "files": [
+    {
+     "path": "clock_widget.dart",
+     "sha256": "b5bd119bb3cb84575264b32603647670016934473fd0e80891d8aaf7eff65760",
+     "size": 7128
+    }
+   ]
+  },
+  {
+   "id": "countdowns",
+   "name": "Countdowns",
+   "description": "Days until the things you are looking forward to — birthdays, holidays, trips. The soonest first.",
+   "author": "Vincent Willcox",
+   "authorUrl": "https://github.com/vwillcox",
+   "category": "Time & day",
+   "glyph": "🗓️",
+   "version": "1.0.0",
+   "kind": "dart",
+   "entry": "countdowns_widget.dart",
+   "types": [
+    "countdowns"
+   ],
+   "permissions": [],
+   "minApp": "1.1.0",
+   "screenshot": "screenshot.png",
+   "files": [
+    {
+     "path": "countdowns_widget.dart",
+     "sha256": "9f0157bcb1524b7e6de0a34b89411a3e2ac9c5679400935ad541d5ea52d25a6f",
+     "size": 10504
+    }
+   ]
+  },
+  {
+   "id": "fuel",
+   "name": "Fuel prices",
+   "description": "The cheapest petrol or diesel near home, from the prices Asda, Shell, JET, Applegreen, Morrisons, Moto, MFG, Rontec and SGN publish under the UK’s open fuel price scheme — no key needed.",
+   "author": "Vincent Willcox",
+   "authorUrl": "https://github.com/vwillcox",
+   "category": "Getting out",
+   "glyph": "⛽",
+   "version": "1.0.0",
+   "kind": "dart",
+   "entry": "fuel_widget.dart",
+   "types": [
+    "fuel"
+   ],
+   "permissions": [],
+   "minApp": "1.1.0",
+   "screenshot": "screenshot.png",
+   "files": [
+    {
+     "path": "fuel_widget.dart",
+     "sha256": "ead6223d4ebfce95e9f54ee3234abfe95aec22633c403a8ad93e223c578aba05",
+     "size": 11311
+    }
+   ]
+  },
+  {
+   "id": "github",
+   "name": "GitHub repository",
+   "description": "Stars, issues, pull requests, releases and a weekly commit chart for your GitHub repositories — a tab each — and, with a token, who has been visiting. No token needed for public ones.",
+   "author": "Vincent Willcox",
+   "authorUrl": "https://github.com/vwillcox",
+   "category": "Home lab",
+   "glyph": "🐙",
+   "version": "1.0.0",
+   "kind": "dart",
+   "entry": "github_widget.dart",
+   "types": [
+    "github"
+   ],
+   "permissions": [],
+   "minApp": "1.1.0",
+   "screenshot": "screenshot.png",
+   "files": [
+    {
+     "path": "github_widget.dart",
+     "sha256": "c75e915a88de638df645f3cc9f202871be054c23574417cecee29ee45d27cbdf",
+     "size": 37967
+    }
+   ]
+  },
+  {
+   "id": "ha_bridge",
+   "name": "Home Assistant bridge",
+   "description": "Home Assistant as a starship’s console, for a page of its own: its rooms down the side, and each room’s lights and switches to tap, its temperatures, and all its lights on or off at once.",
+   "author": "Vincent Willcox",
+   "authorUrl": "https://github.com/vwillcox",
+   "category": "Around the house",
+   "glyph": "🖖",
+   "version": "1.0.0",
+   "kind": "dart",
+   "entry": "ha_bridge_widget.dart",
+   "types": [
+    "ha_bridge"
+   ],
+   "permissions": [],
+   "minApp": "1.1.0",
+   "screenshot": "screenshot.png",
+   "files": [
+    {
+     "path": "ha_bridge_widget.dart",
+     "sha256": "7b1f596a884ce2c950e0efc70cd1c3deb8a6d8f5eaca7b335ac100f61ef08189",
+     "size": 14938
+    }
+   ]
+  },
+  {
+   "id": "ha_energy",
+   "name": "Electricity",
+   "description": "Electricity used and what it cost — today, this week, this month or the last twelve, each against the one before, as bars. From your smart meter: today through Home Assistant, and the longer views from Bright, with its login in Settings. About half an hour behind, as the meter is.",
+   "author": "Vincent Willcox",
+   "authorUrl": "https://github.com/vwillcox",
+   "category": "Around the house",
+   "glyph": "🔌",
+   "version": "1.0.0",
+   "kind": "dart",
+   "entry": "ha_energy_widget.dart",
+   "types": [
+    "ha_energy"
+   ],
+   "permissions": [],
+   "minApp": "1.1.0",
+   "screenshot": "screenshot.png",
+   "files": [
+    {
+     "path": "ha_energy_widget.dart",
+     "sha256": "f751f792d50c7e73cc341a16aa7eddd5215440a2a500199818d2aad26d303532",
+     "size": 30615
+    }
+   ]
+  },
+  {
+   "id": "history",
+   "name": "On this day in history",
+   "description": "Something that happened on this date, from Wikipedia — a new one every half minute, or tap for the next.",
+   "author": "Vincent Willcox",
+   "authorUrl": "https://github.com/vwillcox",
+   "category": "News & reference",
+   "glyph": "📜",
+   "version": "1.0.0",
+   "kind": "dart",
+   "entry": "history_widget.dart",
+   "types": [
+    "history"
+   ],
+   "permissions": [],
+   "minApp": "1.1.0",
+   "screenshot": "screenshot.png",
+   "files": [
+    {
+     "path": "history_widget.dart",
+     "sha256": "54e8d85169da710ac0578653ec46cbb8ab29cc99eb15f90b52724577c54849db",
+     "size": 7137
+    }
+   ]
+  },
+  {
+   "id": "home_assistant",
+   "name": "Home Assistant",
+   "description": "Home Assistant entities you pick — temperatures, who is home, what is playing — each as a small card. Lights and switches change with a tap; locks and doors are only ever shown.",
+   "author": "Vincent Willcox",
+   "authorUrl": "https://github.com/vwillcox",
+   "category": "Around the house",
+   "glyph": "🏡",
+   "version": "1.0.0",
+   "kind": "dart",
+   "entry": "home_assistant_widget.dart",
+   "types": [
+    "home_assistant"
+   ],
+   "permissions": [],
+   "minApp": "1.1.0",
+   "screenshot": "screenshot.png",
+   "files": [
+    {
+     "path": "home_assistant_widget.dart",
+     "sha256": "bed909f702b562425e065873317faa134bb9905f89a9b47e09094997c7e7ecb2",
+     "size": 9750
+    }
+   ]
+  },
+  {
+   "id": "homey",
+   "name": "Homey",
+   "description": "Sixteen tiles for a Homey hub: devices, rooms, lights, flows, light colour, fans, the whole house, moods, alerts, climate, energy, history, who’s home, variables, the timeline and the hub itself.",
+   "author": "Vincent Willcox",
+   "authorUrl": "https://github.com/vwillcox",
+   "category": "Homey",
+   "glyph": "🏠",
+   "version": "1.0.0",
+   "kind": "dart",
+   "entry": "homey_widgets.dart",
+   "types": [
+    "homey",
+    "homey_room",
+    "homey_lights",
+    "homey_flows",
+    "homey_colour",
+    "homey_fan",
+    "homey_house",
+    "homey_moods",
+    "homey_alerts",
+    "homey_climate",
+    "homey_energy",
+    "homey_history",
+    "homey_presence",
+    "homey_variables",
+    "homey_timeline",
+    "homey_system"
+   ],
+   "permissions": [],
+   "minApp": "1.1.0",
+   "screenshot": "screenshot.png",
+   "files": [
+    {
+     "path": "homey_widgets.dart",
+     "sha256": "9062ba2cbd580c6064bcade6d5cf8fc3e67838393c59fac32de9b58d49581730",
+     "size": 83830
+    }
+   ]
+  },
+  {
+   "id": "immich",
+   "name": "Photo",
+   "description": "A photo from your Immich server — at random from the whole library, or from one album. Changes on a timer, and on a tap.",
+   "author": "Vincent Willcox",
+   "authorUrl": "https://github.com/vwillcox",
+   "category": "Photos, music & TV",
+   "glyph": "🖼️",
+   "version": "1.0.0",
+   "kind": "dart",
+   "entry": "immich_widget.dart",
+   "types": [
+    "immich"
+   ],
+   "permissions": [],
+   "minApp": "1.1.0",
+   "screenshot": "screenshot.png",
+   "files": [
+    {
+     "path": "immich_widget.dart",
+     "sha256": "5641541fb3223c7406a7d2d8d790f1b8c36cee6e9fd48ef91db3a827b03ee8d2",
+     "size": 10349
+    }
+   ]
+  },
+  {
+   "id": "immich_library",
+   "name": "Immich library",
+   "description": "Your Immich library in numbers — photos, videos, how much space it takes, how many added lately — with the newest photos along the bottom.",
+   "author": "Vincent Willcox",
+   "authorUrl": "https://github.com/vwillcox",
+   "category": "Photos, music & TV",
+   "glyph": "🗂️",
+   "version": "1.0.0",
+   "kind": "dart",
+   "entry": "immich_library_widget.dart",
+   "types": [
+    "immich_library"
+   ],
+   "permissions": [],
+   "minApp": "1.1.0",
+   "screenshot": "screenshot.png",
+   "files": [
+    {
+     "path": "immich_library_widget.dart",
+     "sha256": "24c3332ede8eebeab6ae7aabf774d65b7cc95d233a6e69c7df4a5dff7ee79069",
+     "size": 7751
+    }
+   ]
+  },
+  {
+   "id": "lan_speedtest",
+   "name": "LAN speed test",
+   "description": "Speed between this panel and another machine on your network, using a self-hosted OpenSpeedTest server. Tap to run. Measures your own wiring rather than your internet connection.",
+   "author": "Vincent Willcox",
+   "authorUrl": "https://github.com/vwillcox",
+   "category": "Network",
+   "glyph": "🔁",
+   "version": "1.0.0",
+   "kind": "dart",
+   "entry": "lan_speedtest_widget.dart",
+   "types": [
+    "lan_speedtest"
+   ],
+   "permissions": [],
+   "minApp": "1.1.0",
+   "screenshot": "screenshot.png",
+   "files": [
+    {
+     "path": "lan_speedtest_widget.dart",
+     "sha256": "e1a53e91f1ebe3679b68d73119a64c66f7cfffa2f0e2d89db4b98544e9ce97e9",
+     "size": 8531
+    }
+   ]
+  },
+  {
+   "id": "lights",
+   "name": "Lights",
+   "description": "Govee lights and plugs. Tap one to switch it, drag along its bar for brightness, tap a colour. Works over the home network for devices with LAN Control turned on in the Govee app, or through Govee with an API key.",
+   "author": "Vincent Willcox",
+   "authorUrl": "https://github.com/vwillcox",
+   "category": "Around the house",
+   "glyph": "💡",
+   "version": "1.0.0",
+   "kind": "dart",
+   "entry": "lights_widget.dart",
+   "types": [
+    "lights"
+   ],
+   "permissions": [],
+   "minApp": "1.1.0",
+   "screenshot": "screenshot.png",
+   "files": [
+    {
+     "path": "lights_widget.dart",
+     "sha256": "2ce5654e8ba4987f954343cb54273e375a3a25300ab394409e010b0b2f5b999f",
+     "size": 13264
+    }
+   ]
+  },
+  {
+   "id": "markets",
+   "name": "Stocks & crypto",
+   "description": "Share prices and indices from Yahoo Finance, and coin prices from CoinGecko, each with its move and a small chart.",
+   "author": "Vincent Willcox",
+   "authorUrl": "https://github.com/vwillcox",
+   "category": "News & reference",
+   "glyph": "📈",
+   "version": "1.0.0",
+   "kind": "dart",
+   "entry": "markets_widgets.dart",
+   "types": [
+    "stocks",
+    "crypto"
+   ],
+   "permissions": [],
+   "minApp": "1.1.0",
+   "screenshot": "screenshot.png",
+   "files": [
+    {
+     "path": "markets_widgets.dart",
+     "sha256": "5c8a6ab1eb05fb16452a8abb1bcbfd01454b0a1311e7e9f46cab2e959c6203db",
+     "size": 66924
+    }
+   ]
+  },
+  {
+   "id": "meals",
+   "name": "Meal plan",
+   "description": "The week’s dinners: tonight’s large, tomorrow’s underneath. After dinner time it moves on to tomorrow.",
+   "author": "Vincent Willcox",
+   "authorUrl": "https://github.com/vwillcox",
+   "category": "Around the house",
+   "glyph": "🍽️",
+   "version": "1.0.0",
+   "kind": "dart",
+   "entry": "meals_widget.dart",
+   "types": [
+    "meals"
+   ],
+   "permissions": [],
+   "minApp": "1.1.0",
+   "screenshot": "screenshot.png",
+   "files": [
+    {
+     "path": "meals_widget.dart",
+     "sha256": "892b8ccb8b6ae88bfe481aef242046c2c6e4f655928ab0b283271a1c1b8ffd18",
+     "size": 6993
+    }
+   ]
+  },
+  {
+   "id": "memories",
+   "name": "On this day",
+   "description": "Your photos from this date in past years, from Immich’s memories, with how long ago and where. Tap or swipe for the next.",
+   "author": "Vincent Willcox",
+   "authorUrl": "https://github.com/vwillcox",
+   "category": "Photos, music & TV",
+   "glyph": "📸",
+   "version": "1.0.0",
+   "kind": "dart",
+   "entry": "memories_widget.dart",
+   "types": [
+    "memories"
+   ],
+   "permissions": [],
+   "minApp": "1.1.0",
+   "screenshot": "screenshot.png",
+   "files": [
+    {
+     "path": "memories_widget.dart",
+     "sha256": "25ff99dbd9af7cd1c5a47d74fc526ef5b3d421e8dea4ffa655a0e4ab7ce32aca",
+     "size": 11167
+    }
+   ]
+  },
+  {
+   "id": "news",
+   "name": "News feed",
+   "description": "Headlines from any RSS or Atom feed.",
+   "author": "Vincent Willcox",
+   "authorUrl": "https://github.com/vwillcox",
+   "category": "News & reference",
+   "glyph": "📰",
+   "version": "1.0.0",
+   "kind": "dart",
+   "entry": "news_widget.dart",
+   "types": [
+    "news"
+   ],
+   "permissions": [],
+   "minApp": "1.1.0",
+   "screenshot": "screenshot.png",
+   "starter": true,
+   "files": [
+    {
+     "path": "news_widget.dart",
+     "sha256": "bd53d0f37a96a84d8b2cdfbde866fb1208cf1f3ff69bb2b8b830fb38377b2d22",
+     "size": 43164
+    }
+   ]
+  },
+  {
+   "id": "notes",
+   "name": "Notes",
+   "description": "Sticky notes for the household. Share text from the phone app, or post one from any phone on the home network at the editor’s address followed by /notes. Tap a note, then Done, to take it down.",
+   "author": "Vincent Willcox",
+   "authorUrl": "https://github.com/vwillcox",
+   "category": "Around the house",
+   "glyph": "📝",
+   "version": "1.0.0",
+   "kind": "dart",
+   "entry": "notes_widget.dart",
+   "types": [
+    "notes"
+   ],
+   "permissions": [],
+   "minApp": "1.1.0",
+   "screenshot": "screenshot.png",
+   "starter": true,
+   "files": [
+    {
+     "path": "notes_widget.dart",
+     "sha256": "f900899845f10475b137eeeffb4d4de44b24d617fd64b311cd9ec3fda0654c8f",
+     "size": 10220
+    }
+   ]
+  },
+  {
+   "id": "omarchy",
+   "name": "Omarchy hotkeys",
+   "description": "The Omarchy keyboard shortcuts as a cheat sheet, one section at a time. Tap a section to jump to it, or tap the sheet to turn the page. Sized for a page of its own.",
+   "author": "Vincent Willcox",
+   "authorUrl": "https://github.com/vwillcox",
+   "category": "News & reference",
+   "glyph": "⌨️",
+   "version": "1.0.0",
+   "kind": "dart",
+   "entry": "omarchy_widget.dart",
+   "types": [
+    "omarchy"
+   ],
+   "permissions": [],
+   "minApp": "1.1.0",
+   "screenshot": "screenshot.png",
+   "files": [
+    {
+     "path": "omarchy_hotkeys.dart",
+     "sha256": "0dcf0c1419dc72bdc7d309ee4eb3c7689a94b30ca01713ccaca607fba9fd0bf0",
+     "size": 15264
+    },
+    {
+     "path": "omarchy_widget.dart",
+     "sha256": "f03b37a4c1b6261bfd5957b92edf6585280d51d04e1058f752b3746e35b91cf2",
+     "size": 22518
+    }
+   ]
+  },
+  {
+   "id": "planes",
+   "name": "Planes overhead",
+   "description": "The aircraft in the sky around home: who they are, where they’re flying from and to, how high, and which way to look. From adsb.lol, the open network of volunteer ADS-B receivers, and adsbdb — no key needed.",
+   "author": "Vincent Willcox",
+   "authorUrl": "https://github.com/vwillcox",
+   "category": "Getting out",
+   "glyph": "✈️",
+   "version": "1.0.0",
+   "kind": "dart",
+   "entry": "planes_widget.dart",
+   "types": [
+    "planes"
+   ],
+   "permissions": [],
+   "minApp": "1.1.0",
+   "screenshot": "screenshot.png",
+   "files": [
+    {
+     "path": "planes_widget.dart",
+     "sha256": "1146c6fe10ca0e1cca65bdedee5677a9a6db15b81ed08d61e4ca1707c85929a3",
+     "size": 11461
+    }
+   ]
+  },
+  {
+   "id": "radio",
+   "name": "Radio",
+   "description": "Internet radio on the panel’s speakers. Pick stations from around the world, or add any stream by its address, then tap one to tune in. It keeps playing when the dashboard turns the page. Given a page to itself it can show the song’s cover and what played before, an old set’s tuning dial, or a grid of stations.",
+   "author": "Vincent Willcox",
+   "authorUrl": "https://github.com/vwillcox",
+   "category": "Photos, music & TV",
+   "glyph": "📻",
+   "version": "1.0.0",
+   "kind": "dart",
+   "entry": "radio_widget.dart",
+   "types": [
+    "radio"
+   ],
+   "permissions": [],
+   "minApp": "1.1.0",
+   "screenshot": "screenshot.png",
+   "files": [
+    {
+     "path": "radio_widget.dart",
+     "sha256": "61403709386bf8c8739b670cc490e5837e76eeb01f2b351ba6b40a77a0c02043",
+     "size": 47628
+    }
+   ]
+  },
+  {
+   "id": "railcam",
+   "name": "Railcam",
+   "description": "Lineside cameras from railcam.uk: pick any of its 300 and touch one to watch it live on the panel — or have them playing in the tile, small and silent. Needs your own railcam.uk account — supporters’ cameras, a supporter’s.",
+   "author": "Vincent Willcox",
+   "authorUrl": "https://github.com/vwillcox",
+   "category": "Photos, music & TV",
+   "glyph": "🚂",
+   "version": "1.0.0",
+   "kind": "dart",
+   "entry": "railcam_widget.dart",
+   "types": [
+    "railcam"
+   ],
+   "permissions": [],
+   "minApp": "1.1.0",
+   "screenshot": "screenshot.png",
+   "files": [
+    {
+     "path": "railcam_widget.dart",
+     "sha256": "f72990232e86323910febd924e3dbdc8153e8e8f73114528ed62605d2b024fba",
+     "size": 23250
+    }
+   ]
+  },
+  {
+   "id": "rain",
+   "name": "Rain soon",
+   "description": "Whether it is about to rain: the next two hours in a sentence — \"Rain from 14:20, light\" — and as bars. For the place in Settings → Weather.",
+   "author": "Vincent Willcox",
+   "authorUrl": "https://github.com/vwillcox",
+   "category": "Weather & air",
+   "glyph": "☔",
+   "version": "1.0.0",
+   "kind": "dart",
+   "entry": "rain_widget.dart",
+   "types": [
+    "rain"
+   ],
+   "permissions": [],
+   "minApp": "1.1.0",
+   "screenshot": "screenshot.png",
+   "files": [
+    {
+     "path": "rain_widget.dart",
+     "sha256": "93b24078d5f44f479c9a03bf7e4c7f3fb8a927dbc99b2c0cce2c14333fd95615",
+     "size": 6317
+    }
+   ]
+  },
+  {
+   "id": "reminders",
+   "name": "Reminders",
+   "description": "Reminders shared from the phone app — “Remind me to put the bins out at 7pm”, “Don’t forget the dentist tomorrow at 9:30”. Said aloud when they fall due; tap one when it’s done.",
+   "author": "Vincent Willcox",
+   "authorUrl": "https://github.com/vwillcox",
+   "category": "Time & day",
+   "glyph": "⏰",
+   "version": "1.0.0",
+   "kind": "dart",
+   "entry": "reminders_widget.dart",
+   "types": [
+    "reminders"
+   ],
+   "permissions": [],
+   "minApp": "1.1.0",
+   "screenshot": "screenshot.png",
+   "files": [
+    {
+     "path": "reminders_widget.dart",
+     "sha256": "0d8481fb3cefe46326cb9bd1069ed31dab69d67992167423fd17d99bd12c1733",
+     "size": 10643
+    }
+   ]
+  },
+  {
+   "id": "sea_state",
+   "name": "Sea state",
+   "description": "The sea at a place you choose: its level against the mean, how high the waves are, and how warm the water is. From Open-Meteo, which asks for no key.",
+   "author": "Vincent Willcox",
+   "authorUrl": "https://github.com/vwillcox",
+   "category": "Weather & air",
+   "glyph": "🌊",
+   "version": "1.0.0",
+   "kind": "json",
+   "types": [
+    "custom_sea_state"
+   ],
+   "permissions": [],
+   "minApp": "1.1.0",
+   "screenshot": "screenshot.png",
+   "files": [
+    {
+     "path": "sea_state.json",
+     "sha256": "772fe8a930c2bc45c22c465eb16d6b4ca331b257a170fd968cbcd4d002db3941",
+     "size": 1610
+    }
+   ]
+  },
+  {
+   "id": "servers",
+   "name": "Servers",
+   "description": "CPU, memory, disk and temperature for this Pi and your other machines, and whether their containers are running. Other machines need Glances — on CasaOS, one click in its app store.",
+   "author": "Vincent Willcox",
+   "authorUrl": "https://github.com/vwillcox",
+   "category": "Home lab",
+   "glyph": "🖥️",
+   "version": "1.0.0",
+   "kind": "dart",
+   "entry": "servers_widget.dart",
+   "types": [
+    "servers"
+   ],
+   "permissions": [],
+   "minApp": "1.1.0",
+   "screenshot": "screenshot.png",
+   "files": [
+    {
+     "path": "servers_widget.dart",
+     "sha256": "bfc45beefeafebf48dcec735ee3f3370576ddef786e74d280ebae8beec22c05e",
+     "size": 15161
+    }
+   ]
+  },
+  {
+   "id": "services",
+   "name": "Services",
+   "description": "A light per thing that should be up — Immich, CasaOS, the router, the Mac mini — with how quickly it answers. Tap one to check again, or to wake a sleeping computer.",
+   "author": "Vincent Willcox",
+   "authorUrl": "https://github.com/vwillcox",
+   "category": "Home lab",
+   "glyph": "🟢",
+   "version": "1.0.0",
+   "kind": "dart",
+   "entry": "services_widget.dart",
+   "types": [
+    "services"
+   ],
+   "permissions": [],
+   "minApp": "1.1.0",
+   "screenshot": "screenshot.png",
+   "files": [
+    {
+     "path": "services_widget.dart",
+     "sha256": "6f358e76ae2b3a44c8991166e3a9fd83bc69eede277e9c43773f7e0dae3d186b",
+     "size": 9991
+    }
+   ]
+  },
+  {
+   "id": "seven_fm",
+   "name": "StreamingSoundtracks",
+   "description": "StreamingSoundtracks.com — film, game and TV scores — on the panel’s speakers, with the album and its cover, how far through the track is, what is coming up and who asked for it, and what played before. Or one of its sister stations: 1980s.FM, Adagio.FM, Death.FM or Entranced.FM.",
+   "author": "Vincent Willcox",
+   "authorUrl": "https://github.com/vwillcox",
+   "category": "Photos, music & TV",
+   "glyph": "🎬",
+   "version": "1.0.0",
+   "kind": "dart",
+   "entry": "seven_fm_widget.dart",
+   "types": [
+    "sevenFm"
+   ],
+   "permissions": [],
+   "minApp": "1.1.0",
+   "screenshot": "screenshot.png",
+   "files": [
+    {
+     "path": "seven_fm_widget.dart",
+     "sha256": "4521b9a0f9abc14bbe86cb5f727b2ad471aa94ce6f3a2d00f003595d9487f9f4",
+     "size": 28972
+    }
+   ]
+  },
+  {
+   "id": "shopping",
+   "name": "Shopping list",
+   "description": "One list the whole house shares. Add to it from any phone on the home network at the editor’s address followed by /list; tap an item on the panel to tick it off. Ticked items clear themselves after half a day.",
+   "author": "Vincent Willcox",
+   "authorUrl": "https://github.com/vwillcox",
+   "category": "Around the house",
+   "glyph": "🧺",
+   "version": "1.0.0",
+   "kind": "dart",
+   "entry": "shopping_widget.dart",
+   "types": [
+    "shopping"
+   ],
+   "permissions": [],
+   "minApp": "1.1.0",
+   "screenshot": "screenshot.png",
+   "files": [
+    {
+     "path": "shopping_widget.dart",
+     "sha256": "546d73d54b141d94adeae472e0b96aa483294f9cf55d6e50f8903822d31daa30",
+     "size": 6160
+    }
+   ]
+  },
+  {
+   "id": "site_feeds",
+   "name": "Floatplane & Nebula",
+   "description": "The latest videos from the creators you follow on Floatplane and Nebula, to watch on the panel.",
+   "author": "Vincent Willcox",
+   "authorUrl": "https://github.com/vwillcox",
+   "category": "Photos, music & TV",
+   "glyph": "🎞️",
+   "version": "1.0.0",
+   "kind": "dart",
+   "entry": "site_feed_widgets.dart",
+   "types": [
+    "floatplane",
+    "nebula"
+   ],
+   "permissions": [],
+   "minApp": "1.1.0",
+   "screenshot": "screenshot.png",
+   "files": [
+    {
+     "path": "site_feed_widgets.dart",
+     "sha256": "7424e861ab34e442d445d9463c5163062ba678e2c5bdccefe24efe7dcfb95f3e",
+     "size": 1132
+    }
+   ]
+  },
+  {
+   "id": "social",
+   "name": "Mastodon & Bluesky",
+   "description": "Your Mastodon and Bluesky timelines, notifications, lists and feeds, signed in.",
+   "author": "Vincent Willcox",
+   "authorUrl": "https://github.com/vwillcox",
+   "category": "News & reference",
+   "glyph": "🐘",
+   "version": "1.0.0",
+   "kind": "dart",
+   "entry": "social_widgets.dart",
+   "types": [
+    "mastodon",
+    "bluesky"
+   ],
+   "permissions": [],
+   "minApp": "1.1.0",
+   "screenshot": "screenshot.png",
+   "files": [
+    {
+     "path": "social_widgets.dart",
+     "sha256": "14743992775221519c6e3fdc5ae23b0563bb8d4ef69d58b5004366c753262efc",
+     "size": 11559
+    }
+   ]
+  },
+  {
+   "id": "speedtest",
+   "name": "Speed test",
+   "description": "Runs Ookla speedtest and shows download and upload on one dial as it goes, with ping, jitter and packet loss. Tap to start. Needs the speedtest CLI installed — see INSTALL.md.",
+   "author": "Vincent Willcox",
+   "authorUrl": "https://github.com/vwillcox",
+   "category": "Network",
+   "glyph": "📶",
+   "version": "1.0.0",
+   "kind": "dart",
+   "entry": "speedtest_widget.dart",
+   "types": [
+    "speedtest"
+   ],
+   "permissions": [],
+   "minApp": "1.1.0",
+   "screenshot": "screenshot.png",
+   "files": [
+    {
+     "path": "speedtest_widget.dart",
+     "sha256": "9cb3ab80102cd2e4324a888e70843033564b9ded3492f72d7e5b748dcf9cd176",
+     "size": 9873
+    }
+   ]
+  },
+  {
+   "id": "spotify",
+   "name": "Now playing",
+   "description": "The current track with transport controls. Shows Spotify when it is active, otherwise the phone over Bluetooth. The artwork moves to suit the tile’s shape.",
+   "author": "Vincent Willcox",
+   "authorUrl": "https://github.com/vwillcox",
+   "category": "Photos, music & TV",
+   "glyph": "🎵",
+   "version": "1.0.0",
+   "kind": "dart",
+   "entry": "spotify_widget.dart",
+   "types": [
+    "spotify"
+   ],
+   "permissions": [],
+   "minApp": "1.1.0",
+   "screenshot": "screenshot.png",
+   "files": [
+    {
+     "path": "spotify_widget.dart",
+     "sha256": "55110853289c67631b7d157389d7e18403978933e8a4dc6158af9d5d22c8f7c5",
+     "size": 20905
+    }
+   ]
+  },
+  {
+   "id": "sun_moon",
+   "name": "Sun & moon",
+   "description": "Sunrise and sunset, where the sun is now, how fast the days are changing, and the moon’s phase. Worked out on the panel from the place set in Settings → Weather.",
+   "author": "Vincent Willcox",
+   "authorUrl": "https://github.com/vwillcox",
+   "category": "Time & day",
+   "glyph": "🌅",
+   "version": "1.0.0",
+   "kind": "dart",
+   "entry": "sun_moon_widget.dart",
+   "types": [
+    "sun_moon"
+   ],
+   "permissions": [],
+   "minApp": "1.1.0",
+   "screenshot": "screenshot.png",
+   "starter": true,
+   "files": [
+    {
+     "path": "sun_moon_widget.dart",
+     "sha256": "001597af4a91280d5e5d96eb99dbba59c479797c6389efaf55abc3609df952e2",
+     "size": 13722
+    }
+   ]
+  },
+  {
+   "id": "tfl",
+   "name": "London transport",
+   "description": "Whether the Tube, Elizabeth line, Overground, DLR and trams are running, and the next arrivals at your stop.",
+   "author": "Vincent Willcox",
+   "authorUrl": "https://github.com/vwillcox",
+   "category": "Getting out",
+   "glyph": "🚇",
+   "version": "1.0.0",
+   "kind": "dart",
+   "entry": "tfl_widgets.dart",
+   "types": [
+    "tfl_lines",
+    "tfl_arrivals"
+   ],
+   "permissions": [],
+   "minApp": "1.1.0",
+   "screenshot": "screenshot.png",
+   "files": [
+    {
+     "path": "tfl_widgets.dart",
+     "sha256": "4af164e9808d799930b9fdec42d11e46fecebe50fe0501f6f9ecf79af96ca46c",
+     "size": 20128
+    }
+   ]
+  },
+  {
+   "id": "tides",
+   "name": "Tides",
+   "description": "High and low tide times, whether the water is coming in or going out, and the sea’s height through the day — anywhere on the coast. From Open-Meteo’s tide model, no key needed. Modelled, not measured: fine for a walk on the beach, not for navigation.",
+   "author": "Vincent Willcox",
+   "authorUrl": "https://github.com/vwillcox",
+   "category": "Getting out",
+   "glyph": "🌊",
+   "version": "1.0.0",
+   "kind": "dart",
+   "entry": "tides_widget.dart",
+   "types": [
+    "tides"
+   ],
+   "permissions": [],
+   "minApp": "1.1.0",
+   "screenshot": "screenshot.png",
+   "files": [
+    {
+     "path": "tides_widget.dart",
+     "sha256": "e7692a9a1e7016a1cec3b85dd23d786838aa37f0238a712b05f0490c4997f026",
+     "size": 13909
+    }
+   ]
+  },
+  {
+   "id": "timers",
+   "name": "Timers",
+   "description": "Kitchen timers. Tap a time to start one, tap its ring to pause, hold to cancel. When one is done it plays a sound and says which timer it was; tap the ring to stop it. They keep running when you leave the dashboard.",
+   "author": "Vincent Willcox",
+   "authorUrl": "https://github.com/vwillcox",
+   "category": "Time & day",
+   "glyph": "⏲️",
+   "version": "1.0.0",
+   "kind": "dart",
+   "entry": "timers_widget.dart",
+   "types": [
+    "timers"
+   ],
+   "permissions": [],
+   "minApp": "1.1.0",
+   "screenshot": "screenshot.png",
+   "starter": true,
+   "files": [
+    {
+     "path": "timers_widget.dart",
+     "sha256": "b284d7af791b5e0bf00ad235a567cf6154307e489c91d6427f29df8bcfc0fb60",
+     "size": 14078
+    }
+   ]
+  },
+  {
+   "id": "traffic_cams",
+   "name": "Traffic cameras",
+   "description": "Live pictures from the roads: any of London’s 900 TfL JamCams, found by road name or nearest home, or any other camera whose picture has a web address. Tap one to see it large. No key needed.",
+   "author": "Vincent Willcox",
+   "authorUrl": "https://github.com/vwillcox",
+   "category": "Getting out",
+   "glyph": "📷",
+   "version": "1.0.0",
+   "kind": "dart",
+   "entry": "traffic_cams_widget.dart",
+   "types": [
+    "traffic_cams"
+   ],
+   "permissions": [],
+   "minApp": "1.1.0",
+   "screenshot": "screenshot.png",
+   "files": [
+    {
+     "path": "traffic_cams_widget.dart",
+     "sha256": "a98b5f823cb39311209106cb5178ce6ee950fb01e44d78e3c4e1471df78a9f2d",
+     "size": 12676
+    }
+   ]
+  },
+  {
+   "id": "trains",
+   "name": "Train departures",
+   "description": "The next trains from your station, like the board on the platform: time, where to, platform, and whether it is on time. From Realtime Trains — it needs a free token from api-portal.rtt.io.",
+   "author": "Vincent Willcox",
+   "authorUrl": "https://github.com/vwillcox",
+   "category": "Getting out",
+   "glyph": "🚆",
+   "version": "1.0.0",
+   "kind": "dart",
+   "entry": "trains_widget.dart",
+   "types": [
+    "trains"
+   ],
+   "permissions": [],
+   "minApp": "1.1.0",
+   "screenshot": "screenshot.png",
+   "files": [
+    {
+     "path": "trains_widget.dart",
+     "sha256": "27bcd6ba6967ae1335c5dd8cf1ef39e414a7f8be68c5d9fd2f720517f37c3071",
+     "size": 11479
+    }
+   ]
+  },
+  {
+   "id": "transit",
+   "name": "Departures (Europe & US)",
+   "description": "The next trains, trams, subways or buses from any station or stop across most of Europe and North America — the Netherlands, Germany, Switzerland, the Nordics, New York, Boston, Washington DC, Los Angeles and more — live where the operator shares it. From Transitous, the open journey planner — no key needed.",
+   "author": "Vincent Willcox",
+   "authorUrl": "https://github.com/vwillcox",
+   "category": "Getting out",
+   "glyph": "🚆",
+   "version": "1.0.0",
+   "kind": "dart",
+   "entry": "transit_widget.dart",
+   "types": [
+    "transit"
+   ],
+   "permissions": [],
+   "minApp": "1.1.0",
+   "screenshot": "screenshot.png",
+   "files": [
+    {
+     "path": "transit_widget.dart",
+     "sha256": "d3d02cc0773d59ab1c1a2f8f5df4b0a590cf7eac4fe0a8d3ce54b6e841e05307",
+     "size": 15239
+    }
+   ]
+  },
+  {
+   "id": "tv",
+   "name": "TV remote",
+   "description": "Controls a Hisense VIDAA television: power, volume, channel and a direction pad. Set the address in Settings → Television.",
+   "author": "Vincent Willcox",
+   "authorUrl": "https://github.com/vwillcox",
+   "category": "Photos, music & TV",
+   "glyph": "📺",
+   "version": "1.0.0",
+   "kind": "dart",
+   "entry": "tv_widget.dart",
+   "types": [
+    "tv"
+   ],
+   "permissions": [],
+   "minApp": "1.1.0",
+   "screenshot": "screenshot.png",
+   "files": [
+    {
+     "path": "tv_widget.dart",
+     "sha256": "fe5b1b1361ed376dd88ab742f9487cf912cfc21c38f9e542463136d6b73894df",
+     "size": 24574
+    }
+   ]
+  },
+  {
+   "id": "unifi",
+   "name": "UniFi network",
+   "description": "Six tiles for a UniFi network: its health, who’s home, devices, clients, WAN throughput and the router’s own speed test.",
+   "author": "Vincent Willcox",
+   "authorUrl": "https://github.com/vwillcox",
+   "category": "UniFi",
+   "glyph": "🛜",
+   "version": "1.0.0",
+   "kind": "dart",
+   "entry": "unifi_widgets.dart",
+   "types": [
+    "unifi_health",
+    "unifi_presence",
+    "unifi_devices",
+    "unifi_clients",
+    "unifi_throughput",
+    "unifi_isp"
+   ],
+   "permissions": [],
+   "minApp": "1.1.0",
+   "screenshot": "screenshot.png",
+   "files": [
+    {
+     "path": "unifi_widgets.dart",
+     "sha256": "f73008649fa4f65ee7e667f2f3e00f7fae5d8680996ccd7143567c41e831cc69",
+     "size": 47217
+    }
+   ]
+  },
+  {
+   "id": "updates",
+   "name": "Updates",
+   "description": "Updates waiting across the house: Immich against its latest release, Home Assistant’s own updates, and UniFi firmware — in one list, or a tick when there are none.",
+   "author": "Vincent Willcox",
+   "authorUrl": "https://github.com/vwillcox",
+   "category": "Home lab",
+   "glyph": "⬆️",
+   "version": "1.0.0",
+   "kind": "dart",
+   "entry": "updates_widget.dart",
+   "types": [
+    "updates"
+   ],
+   "permissions": [],
+   "minApp": "1.1.0",
+   "screenshot": "screenshot.png",
+   "files": [
+    {
+     "path": "updates_widget.dart",
+     "sha256": "02c239a4414a55471f161f41fbaa45d25f4aa83813ce3fe2c4c5521996085a69",
+     "size": 11104
+    }
+   ]
+  },
+  {
+   "id": "weather",
+   "name": "Weather",
+   "description": "Current conditions and a short forecast. Uses the location set in Settings → Weather.",
+   "author": "Vincent Willcox",
+   "authorUrl": "https://github.com/vwillcox",
+   "category": "Weather & air",
+   "glyph": "⛅",
+   "version": "1.0.0",
+   "kind": "dart",
+   "entry": "weather_widget.dart",
+   "types": [
+    "weather"
+   ],
+   "permissions": [],
+   "minApp": "1.1.0",
+   "screenshot": "screenshot.png",
+   "starter": true,
+   "files": [
+    {
+     "path": "weather_widget.dart",
+     "sha256": "802042e737f4222f947c9baf36a9042849dc3cd68fb0f426650b5083aad248b7",
+     "size": 21769
+    }
+   ]
+  },
+  {
+   "id": "youtube",
+   "name": "YouTube",
+   "description": "The latest videos from your YouTube subscriptions: touch one to watch it on the panel. Can instead play one video in the tile, muted or with sound.",
+   "author": "Vincent Willcox",
+   "authorUrl": "https://github.com/vwillcox",
+   "category": "Photos, music & TV",
+   "glyph": "▶️",
+   "version": "1.0.0",
+   "kind": "dart",
+   "entry": "youtube_widget.dart",
+   "types": [
+    "youtube"
+   ],
+   "permissions": [],
+   "minApp": "1.1.0",
+   "screenshot": "screenshot.png",
+   "files": [
+    {
+     "path": "youtube_widget.dart",
+     "sha256": "dac0abddb095dfb3a7ed43da4b4796eaa12695e1d2a9a3785fb2166c88d955bb",
+     "size": 9652
+    }
+   ]
+  }
+ ]
+}
