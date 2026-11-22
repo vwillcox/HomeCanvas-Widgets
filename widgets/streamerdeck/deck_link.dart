@@ -611,9 +611,20 @@ class DeckLink extends ChangeNotifier {
     notifyListeners();
   }
 
+  bool _disposed = false;
+
+  /// Nothing, once disposed: a key's flash fades on a timer, a key the
+  /// panel runs finishes when it finishes, and a socket closes when it
+  /// closes — any of them after the deck has gone.
+  @override
+  void notifyListeners() {
+    if (!_disposed) super.notifyListeners();
+  }
+
   @override
   void dispose() {
     close();
+    _disposed = true;
     _redraw?.cancel();
     unawaited(_socket?.close());
     super.dispose();

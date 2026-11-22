@@ -221,6 +221,27 @@ void main() {
     expect(computerAsked, [true]);
   });
 
+  test('a flash that outlasts the deck does nothing', () async {
+    final gone = DeckLink(
+      home: HomeAssistantService(ConfigService()),
+      routines: () => [
+        HomeRoutine(name: 'Bedtime', phrases: ['goodnight']),
+      ],
+      runRoutine: (r) => 'ok',
+      computer: (on) async => PcSwitch.done,
+      folder: dir.path,
+      cacheFolder: dir.path,
+    );
+    await File('${dir.path}/deck.json').writeAsString(jsonEncode(deckJson()));
+    await gone.load();
+    final bedtime = gone.page!.at(2, 0)!;
+    gone.press(bedtime);
+    await until(() => gone.fxOf(bedtime) != null);
+    gone.dispose();
+    // The flash fades 1.7 s after it lit, on a timer of its own.
+    await Future<void>.delayed(const Duration(milliseconds: 1900));
+  });
+
   test('a computer key with no computer there warns at once', () async {
     await loadDeck();
     final save = link.page!.at(0, 0)!;
